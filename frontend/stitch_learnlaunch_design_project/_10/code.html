@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>对话式学习页面 - 学启航</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#565f72",
+                    "on-tertiary-fixed-variant": "#5a4b74",
+                    "surface": "#f8f9fb",
+                    "inverse-on-surface": "#9a9d9f",
+                    "surface-container-high": "#e3e9ed",
+                    "error-dim": "#67040d",
+                    "surface-container-highest": "#dce4e8",
+                    "on-primary": "#f8f8ff",
+                    "on-tertiary": "#fef7ff",
+                    "surface-container": "#eaeff2",
+                    "on-surface": "#2c3437",
+                    "tertiary": "#675882",
+                    "surface-variant": "#dce4e8",
+                    "on-background": "#2c3437",
+                    "tertiary-fixed": "#dfccfd",
+                    "outline-variant": "#acb3b7",
+                    "tertiary-container": "#dfccfd",
+                    "primary-dim": "#1b529b",
+                    "primary-fixed": "#81aefd",
+                    "on-tertiary-container": "#50426a",
+                    "primary-fixed-dim": "#73a1ef",
+                    "inverse-primary": "#81aefd",
+                    "on-secondary-container": "#495264",
+                    "surface-tint": "#2c5ea7",
+                    "primary-container": "#81aefd",
+                    "inverse-surface": "#0b0f10",
+                    "tertiary-fixed-dim": "#d1beee",
+                    "secondary-fixed": "#dae2f9",
+                    "outline": "#747c80",
+                    "on-error": "#fff7f6",
+                    "error-container": "#fa746f",
+                    "primary": "#2c5ea7",
+                    "secondary-container": "#dae2f9",
+                    "on-secondary": "#f8f8ff",
+                    "surface-bright": "#f8f9fb",
+                    "on-primary-fixed": "#001431",
+                    "tertiary-dim": "#5b4c75",
+                    "on-primary-fixed-variant": "#003671",
+                    "error": "#a83836",
+                    "on-error-container": "#6e0a12",
+                    "surface-dim": "#d4dbdf",
+                    "secondary-dim": "#4a5365",
+                    "on-primary-container": "#002d61",
+                    "surface-container-low": "#f0f4f7",
+                    "on-surface-variant": "#596064",
+                    "background": "#f8f9fb",
+                    "on-secondary-fixed": "#373f51",
+                    "on-secondary-fixed-variant": "#535c6e",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#ccd4ea",
+                    "on-tertiary-fixed": "#3d2f56"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .thinking-log-line {
+            position: absolute;
+            left: -1px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #acb3b7;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/50 flex justify-between items-center px-6 py-3 shadow-sm font-['Space_Grotesk'] tracking-tight">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-slate-800 dark:text-slate-100">LearnLaunch</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 cursor-pointer transition-colors" href="#">Curriculum</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" href="#">Analytics</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors cursor-pointer" href="#">Research</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-lg border border-outline-variant/20">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48" placeholder="Search knowledge..." type="text"/>
+</div>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-blue-600">notifications</span>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-blue-600">settings</span>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border border-outline-variant/30">
+<img alt="Student Profile Avatar" class="w-full h-full object-cover" data-alt="professional photographic portrait of a university student with a clean minimalist background and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr5BBVdJTCG1NmQUQswPZc6WQY-dDKRkL0i1Kz8G1Xg_Nafa988GDhGcR14zLb-BcGucQipVcTtQTIPjr1n3aJByYTrc5qch6sh5eX-hcZ7p0rAKwYYpfnQYHpSyKgJl4ASJJe6gfgfMPHVj2ObUi4iVntJLm2ikCvjig6Uo5_6n0DK9fJXjdUdMiGe0fO3fuszVfQlpNhinJc8c7yEs0MjgV22w5zFH4uWPW-bx2knf6YiAiIgX3r5dsPQF8Rc0uZkIxSDBCtynUf"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Thinking Hub) -->
+<aside class="hidden md:flex h-screen w-64 fixed left-0 top-0 mt-[56px] bg-slate-50 dark:bg-slate-950 border-r border-outline-variant/20 flex-col py-6 px-4 space-y-2 font-['Inter'] text-sm font-medium">
+<div class="mb-8 px-2">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">Thinking Hub</h3>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest">Level 4 Architect</p>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg flex items-center justify-center gap-2 hover:bg-primary-dim transition-all active:scale-95">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>New Experiment</span>
+</button>
+</div>
+<nav class="flex-grow space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 rounded-sm border-l-4 border-blue-700 transition-all" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span>Workbench</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span>Library</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>History</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 hover:bg-slate-100 transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span>Collaboration</span>
+</a>
+</nav>
+<div class="pt-6 border-t border-outline-variant/10 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">help_outline</span>
+<span>Support</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>Documentation</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 mt-[56px] min-h-[calc(100vh-56px)] grid grid-cols-12 overflow-hidden">
+<!-- Left: AI Chat Section -->
+<section class="col-span-12 lg:col-span-7 xl:col-span-8 flex flex-col bg-surface-container-lowest relative">
+<!-- Header for current topic -->
+<header class="sticky top-0 z-10 px-8 py-4 bg-white/60 backdrop-blur-md border-b border-outline-variant/10 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="text-primary material-symbols-outlined">psychology</span>
+<div>
+<h2 class="font-headline font-bold text-on-surface tracking-tight">量子物理基础：波粒二象性</h2>
+<p class="text-xs text-on-surface-variant font-medium">Session ID: #ARCH-4092</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-bold text-primary bg-primary-container/20 px-2 py-0.5 rounded">LIVE SYNCHRONIZATION</span>
+</div>
+</header>
+<!-- Conversations (Thinking Log) -->
+<div class="flex-grow p-8 space-y-12 overflow-y-auto max-h-[calc(100vh-200px)]">
+<!-- AI Message -->
+<div class="relative pl-8">
+<div class="thinking-log-line"></div>
+<div class="bg-surface-container-low p-5 rounded-lg border-l-2 border-primary/30">
+<p class="text-sm leading-relaxed text-on-surface">
+                            你好，研究者。我们今天将深入探讨**波粒二象性**。在量子力学的尺度下，经典物理的界限变得模糊。你如何理解“光既是波又是粒子”这一表述？
+                        </p>
+<div class="mt-4 flex gap-2">
+<span class="px-2 py-1 bg-white text-[10px] border border-outline-variant/20 rounded-sm cursor-pointer hover:border-primary transition-colors">查看双缝实验图示</span>
+<span class="px-2 py-1 bg-white text-[10px] border border-outline-variant/20 rounded-sm cursor-pointer hover:border-primary transition-colors">相关公式推导</span>
+</div>
+</div>
+</div>
+<!-- User Message -->
+<div class="relative pl-8">
+<div class="thinking-log-line"></div>
+<div class="p-4 border-l-4 border-primary bg-white shadow-sm">
+<p class="text-sm font-medium text-on-surface italic">
+                            “我觉得这取决于我们观测它的方式。如果用干涉仪测量，它表现出波动性；如果用光电效应检测，它表现出粒子性。”
+                        </p>
+</div>
+</div>
+<!-- AI Response / Analysis -->
+<div class="relative pl-8">
+<div class="thinking-log-line"></div>
+<div class="bg-surface-container-low p-5 rounded-lg border-l-2 border-primary/30">
+<p class="text-sm leading-relaxed text-on-surface mb-4">
+                            观察敏锐。你的回答触及了**互补原理**的核心。当观测手段确定了空间位置，动量（波动特征）就变得不确定。
+                        </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/50 p-3 rounded border border-outline-variant/10">
+<h4 class="text-[11px] font-bold text-secondary uppercase mb-2">掌握进度：互补性</h4>
+<div class="h-1 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary rounded-full w-[85%]"></div>
+</div>
+</div>
+<div class="bg-white/50 p-3 rounded border border-outline-variant/10">
+<h4 class="text-[11px] font-bold text-secondary uppercase mb-2">掌握进度：数学建模</h4>
+<div class="h-1 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary rounded-full w-[40%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Response with Graphic -->
+<div class="relative pl-8">
+<div class="thinking-log-line"></div>
+<div class="bg-surface-container-low p-5 rounded-lg border-l-2 border-primary/30">
+<p class="text-sm leading-relaxed text-on-surface mb-4">
+                            让我们看一个具体的推导：德布罗意波长公式 λ = h/p。这直接将波动属性（波长 λ）与粒子属性（动量 p）联系起来。
+                        </p>
+<div class="w-full h-48 bg-white border border-outline-variant/20 rounded overflow-hidden">
+<img alt="Quantum Visualization" class="w-full h-full object-cover opacity-80" data-alt="abstract artistic visualization of quantum wave-particle duality with blue neon glowing particles and soft undulating wave patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIGoAsvZSm6WQjPlJpUfTjo1O0Ymako1QMoHyodY5RM0joeJvYSIcFuJkJLN4uDTBhSUBGqGEIY4MTHvuCLIowKpeodWC37ik6RUfnBnx4bIRlHB08d9SNJWw_v9r1dxkoo_58Lr57y5CxbBWks0K0sEuA368ELtf9WmXKZXF8HhBowB1fiQUBiv6GGORgS941kbtYYliL_OcFhmgAH2ZjhHE8zyafAT_R2CPtLSWf3kAm1w6Ydn_BD6pCvNYIkwb_vaqq8tCH_g0s"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Area -->
+<footer class="p-6 border-t border-outline-variant/10 bg-white">
+<div class="max-w-4xl mx-auto">
+<div class="flex items-end gap-4 bg-surface-container-low rounded-xl p-3 border border-outline-variant/20 focus-within:border-primary/50 transition-all">
+<textarea class="flex-grow bg-transparent border-none focus:ring-0 text-sm resize-none py-2 px-2" placeholder="输入你的思考或提问..." rows="1"></textarea>
+<div class="flex gap-2 pb-1">
+<button class="p-2 hover:bg-white rounded-lg transition-colors text-slate-400">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<button class="bg-primary text-on-primary p-2 rounded-lg hover:bg-primary-dim transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<div class="mt-3 flex justify-center gap-6">
+<span class="text-[10px] text-slate-400 flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">keyboard</span> Cmd + Enter 发送</span>
+<span class="text-[10px] text-slate-400 flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">mic</span> 语音思考模式</span>
+</div>
+</div>
+</footer>
+</section>
+<!-- Right: Mind Map & Summary Section -->
+<section class="hidden lg:flex col-span-5 xl:col-span-4 border-l border-outline-variant/20 bg-surface flex-col">
+<div class="flex flex-col h-full">
+<!-- Thinking Map Header -->
+<div class="px-6 py-5 border-b border-outline-variant/10 flex justify-between items-center bg-white/50">
+<h3 class="font-headline font-bold text-sm tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">hub</span>
+                        当前思维拓扑
+                    </h3>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">fullscreen</span>
+</div>
+<!-- Dynamic Progress / Breakdown -->
+<div class="p-6 space-y-8 overflow-y-auto">
+<!-- Progress Card -->
+<div class="bg-white p-4 rounded-sm border border-outline-variant/20 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 opacity-5">
+<span class="material-symbols-outlined text-4xl">trending_up</span>
+</div>
+<h4 class="text-[11px] font-extrabold uppercase text-slate-400 tracking-widest mb-3">掌握程度摘要</h4>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-[11px] font-medium mb-1.5">
+<span>概念理解 (Conceptual)</span>
+<span class="text-primary">68%</span>
+</div>
+<div class="h-0.5 w-full bg-slate-100 rounded-full">
+<div class="h-full bg-primary w-[68%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[11px] font-medium mb-1.5">
+<span>数学推演 (Mathematical)</span>
+<span class="text-tertiary">32%</span>
+</div>
+<div class="h-0.5 w-full bg-slate-100 rounded-full">
+<div class="h-full bg-tertiary w-[32%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Steps Breakdown -->
+<div class="space-y-4">
+<h4 class="text-[11px] font-extrabold uppercase text-slate-400 tracking-widest">任务分解步骤</h4>
+<div class="space-y-3">
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<span class="w-5 h-5 rounded-full border border-primary bg-primary text-on-primary text-[10px] flex items-center justify-center font-bold">1</span>
+<div class="w-px flex-grow bg-outline-variant/30 mt-1"></div>
+</div>
+<div class="pb-4">
+<p class="text-xs font-bold text-on-surface">定义波粒二象性</p>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-relaxed">识别物质与能量在不同尺度下的表现形式。</p>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<span class="w-5 h-5 rounded-full border border-primary flex items-center justify-center text-[10px] font-bold text-primary">2</span>
+<div class="w-px flex-grow bg-outline-variant/30 mt-1"></div>
+</div>
+<div class="pb-4">
+<p class="text-xs font-bold text-on-surface text-opacity-50">波函数的物理意义</p>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-relaxed text-opacity-50">探讨概率密度与薛定谔方程。</p>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="flex flex-col items-center">
+<span class="w-5 h-5 rounded-full border border-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-400">3</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface text-opacity-50">测不准原理推导</p>
+<p class="text-[11px] text-on-surface-variant mt-1 leading-relaxed text-opacity-50">位置与动量的非对易性研究。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- AI Real-time Summary Chips -->
+<div class="pt-6 border-t border-outline-variant/10">
+<h4 class="text-[11px] font-extrabold uppercase text-slate-400 tracking-widest mb-4">实时提炼关键词</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest px-3 py-1.5 text-[11px] font-medium rounded-lg text-secondary border border-outline-variant/10"># 德布罗意</span>
+<span class="bg-surface-container-highest px-3 py-1.5 text-[11px] font-medium rounded-lg text-secondary border border-outline-variant/10"># 光电效应</span>
+<span class="bg-surface-container-highest px-3 py-1.5 text-[11px] font-medium rounded-lg text-secondary border border-outline-variant/10"># 观测者效应</span>
+<span class="bg-primary-container/20 px-3 py-1.5 text-[11px] font-bold rounded-lg text-primary border border-primary/20"># 互补原理</span>
+<span class="bg-surface-container-highest px-3 py-1.5 text-[11px] font-medium rounded-lg text-secondary border border-outline-variant/10"># 普朗克常数</span>
+</div>
+</div>
+<!-- Dynamic Map Placeholder -->
+<div class="bg-slate-200/50 aspect-square w-full rounded border-2 border-dashed border-outline-variant/30 flex flex-col items-center justify-center text-slate-400 p-8 text-center">
+<span class="material-symbols-outlined text-4xl mb-2 opacity-50">schema</span>
+<p class="text-[10px] font-medium uppercase tracking-widest">Generating Topology Map...</p>
+<p class="text-[9px] mt-2 leading-relaxed">地图正根据对话逻辑动态扩展，已捕捉到 4 个核心节点。</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-3 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 z-50 font-['Inter'] text-[10px] font-bold uppercase tracking-widest">
+<button class="text-slate-400 dark:text-slate-600 flex flex-col items-center gap-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined">lightbulb</span>
+<span>Hint</span>
+</button>
+<button class="text-slate-400 dark:text-slate-600 flex flex-col items-center gap-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined">fast_forward</span>
+<span>Skip</span>
+</button>
+<button class="text-blue-700 dark:text-blue-400 flex flex-col items-center gap-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined">list_alt</span>
+<span>Steps</span>
+</button>
+<button class="text-slate-400 dark:text-slate-600 flex flex-col items-center gap-1 active:scale-90 transition-all">
+<span class="material-symbols-outlined">construction</span>
+<span>Tools</span>
+</button>
+</nav>
+</body></html>

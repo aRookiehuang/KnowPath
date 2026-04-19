@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>文档中心 - 学启航</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Design System Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#9a9d9f",
+                        "surface-container-high": "#e3e9ed",
+                        "tertiary-fixed-dim": "#d1beee",
+                        "on-primary-fixed-variant": "#003671",
+                        "error-container": "#fa746f",
+                        "on-tertiary": "#fef7ff",
+                        "inverse-primary": "#81aefd",
+                        "error": "#a83836",
+                        "secondary-fixed": "#dae2f9",
+                        "surface-bright": "#f8f9fb",
+                        "tertiary": "#675882",
+                        "secondary-container": "#dae2f9",
+                        "outline-variant": "#acb3b7",
+                        "on-background": "#2c3437",
+                        "on-primary-fixed": "#001431",
+                        "secondary-fixed-dim": "#ccd4ea",
+                        "on-primary": "#f8f8ff",
+                        "tertiary-container": "#dfccfd",
+                        "tertiary-fixed": "#dfccfd",
+                        "on-secondary-fixed-variant": "#535c6e",
+                        "on-tertiary-fixed": "#3d2f56",
+                        "surface": "#f8f9fb",
+                        "primary-fixed": "#81aefd",
+                        "outline": "#747c80",
+                        "on-tertiary-container": "#50426a",
+                        "on-surface-variant": "#596064",
+                        "on-primary-container": "#002d61",
+                        "primary-fixed-dim": "#73a1ef",
+                        "primary": "#2c5ea7",
+                        "on-surface": "#2c3437",
+                        "on-secondary-container": "#495264",
+                        "surface-container-highest": "#dce4e8",
+                        "error-dim": "#67040d",
+                        "background": "#f8f9fb",
+                        "surface-variant": "#dce4e8",
+                        "secondary": "#565f72",
+                        "on-tertiary-fixed-variant": "#5a4b74",
+                        "surface-container-low": "#f0f4f7",
+                        "surface-tint": "#2c5ea7",
+                        "on-secondary-fixed": "#373f51",
+                        "inverse-surface": "#0b0f10",
+                        "secondary-dim": "#4a5365",
+                        "on-error-container": "#6e0a12",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-dim": "#1b529b",
+                        "surface-dim": "#d4dbdf",
+                        "on-secondary": "#f8f8ff",
+                        "on-error": "#fff7f6",
+                        "tertiary-dim": "#5b4c75",
+                        "surface-container": "#eaeff2",
+                        "primary-container": "#81aefd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased flex flex-col h-screen overflow-hidden">
+<!-- TopNavBar Component -->
+<!-- Applying exact styles from JSON execution requirement -->
+<header class="bg-[#f5f7f9] dark:bg-[#2c3437] docked full-width top-0 z-50 border-b-[0.5px] border-[#2c3437]/20 flat no shadows flex justify-between items-center w-full px-6 h-16 flex-shrink-0">
+<!-- Brand & Search (Left) -->
+<div class="flex items-center gap-8">
+<div class="text-xl font-bold text-[#2c3437] dark:text-[#f5f7f9] font-['Space_Grotesk'] tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="school" data-weight="fill" style="font-variation-settings: 'FILL' 1;">school</span>
+                LearnLaunch
+            </div>
+<!-- Contextual Search Bar (Implied by JSON search_bar: on_left) -->
+<div class="hidden md:flex relative group w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline-variant text-sm" data-icon="search">search</span>
+<input class="w-full bg-surface-container-high text-on-surface font-label text-sm pl-8 pr-3 py-1.5 rounded-none border-b-2 border-transparent focus:border-primary focus:bg-surface-container-lowest outline-none transition-colors duration-200 placeholder:text-outline-variant" placeholder="Search documentation..." type="text"/>
+</div>
+</div>
+<!-- Navigation Links (Center) -->
+<nav class="hidden lg:flex items-center gap-6 font-['Space_Grotesk'] tracking-tight">
+<a class="text-[#2c3437]/70 dark:text-[#f5f7f9]/70 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Skills</a>
+<a class="text-[#2c3437]/70 dark:text-[#f5f7f9]/70 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Agents</a>
+<a class="text-[#2c3437]/70 dark:text-[#f5f7f9]/70 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Developer</a>
+<!-- Active State Navigation -->
+<a class="text-[#2c5ea7] dark:text-[#4a89dc] border-b-2 border-[#2c5ea7] pb-1 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Docs</a>
+</nav>
+<!-- Actions (Right) -->
+<div class="flex items-center gap-4 font-['Space_Grotesk'] tracking-tight text-sm">
+<button class="text-[#2c3437]/70 dark:text-[#f5f7f9]/70 hover:text-[#2c5ea7] transition-colors duration-200 font-medium hidden sm:block">Support</button>
+<div class="h-4 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
+<button class="flex items-center gap-2 text-[#2c3437] font-medium hover:text-[#2c5ea7] transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]" data-icon="account_circle">account_circle</span>
+<span class="hidden sm:block">Profile</span>
+</button>
+</div>
+</header>
+<!-- Main Workspace Layout -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Sidebar: 3-Level Navigation (Academic TOC) -->
+<aside class="w-72 flex-shrink-0 bg-surface-container-low overflow-y-auto border-r-[0.5px] border-outline-variant/20 hidden md:flex flex-col">
+<div class="p-6">
+<h3 class="font-headline font-bold text-on-surface mb-6 uppercase tracking-widest text-xs text-outline">Documentation</h3>
+<nav class="space-y-4 font-label text-sm">
+<!-- Level 1 Group -->
+<div>
+<div class="font-semibold text-on-surface mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline" data-icon="rocket_launch">rocket_launch</span>
+                            平台入门
+                        </div>
+<ul class="space-y-1.5 pl-6 border-l-[1px] border-outline-variant/20 ml-2">
+<!-- Active Item Indicator -->
+<li class="relative">
+<div class="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary"></div>
+<a class="block pl-3 py-1 text-primary font-medium bg-surface-container-lowest/50" href="#">学启航核心架构</a>
+</li>
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">系统环境配置</a></li>
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">身份验证机制</a></li>
+</ul>
+</div>
+<!-- Level 1 Group -->
+<div>
+<div class="font-semibold text-on-surface mb-2 mt-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline" data-icon="code_blocks">code_blocks</span>
+                            核心模块集成
+                        </div>
+<ul class="space-y-1.5 pl-6 border-l-[1px] border-outline-variant/20 ml-2">
+<li>
+<a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">技能代理 (Agents)</a>
+<!-- Level 3 -->
+<ul class="space-y-1 mt-1 pl-3">
+<li><a class="block py-0.5 text-xs text-outline hover:text-primary transition-colors" href="#">基础代理构建</a></li>
+<li><a class="block py-0.5 text-xs text-outline hover:text-primary transition-colors" href="#">高级推理网络</a></li>
+</ul>
+</li>
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">数据处理管线</a></li>
+</ul>
+</div>
+<!-- Level 1 Group -->
+<div>
+<div class="font-semibold text-on-surface mb-2 mt-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline" data-icon="library_books">library_books</span>
+                            学术参考
+                        </div>
+<ul class="space-y-1.5 pl-6 border-l-[1px] border-outline-variant/20 ml-2">
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">API 端点规范</a></li>
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">模型性能基准</a></li>
+<li><a class="block pl-3 py-1 text-on-surface-variant hover:text-primary transition-colors" href="#">引用与致谢</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</aside>
+<!-- Center Content: The "Canvas" -->
+<main class="flex-1 overflow-y-auto bg-surface-container-lowest scroll-smooth" id="main-scroll-area">
+<article class="max-w-4xl mx-auto px-8 py-12 lg:px-16 lg:py-20 relative">
+<!-- Document Header -->
+<header class="mb-16">
+<div class="flex items-center gap-3 mb-6 text-sm font-label text-outline">
+<span>文档版本 v2.4.0</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span>最后更新: 2023年10月24日</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight mb-6 leading-tight">学启航核心架构指南</h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed max-w-3xl">
+                        本文档系统地阐述了学启航 (LearnLaunch) 平台的底层架构原理，旨在为学术研究人员和高级开发者提供深入的集成指导，帮助构建具备高级认知能力的交互式代理系统。
+                    </p>
+</header>
+<!-- Conceptual Content Sections -->
+<div class="space-y-16 text-on-surface font-body leading-relaxed">
+<!-- Section: Quick Start -->
+<section class="scroll-mt-24" id="quick-start">
+<h2 class="text-2xl font-headline font-bold text-on-surface mb-6 tracking-tight flex items-center gap-2">
+<span class="w-6 h-[2px] bg-primary inline-block"></span>
+                            快速开始
+                        </h2>
+<p class="mb-6 text-on-surface-variant">
+                            在正式部署复杂的代理网络之前，建立基础的运行环境至关重要。学启航采用容器化的架构设计，确保在异构计算环境下的行为一致性。
+                        </p>
+<!-- High-end UI Pattern: Asymmetric Setup Box -->
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary mb-8">
+<h4 class="font-semibold mb-2 flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px]" data-icon="terminal">terminal</span>
+                                初始化环境
+                            </h4>
+<p class="text-sm text-on-surface-variant mb-4">通过核心包管理器拉取最新稳定的架构镜像。</p>
+<div class="bg-surface-container-lowest p-3 rounded font-mono text-sm text-on-surface border-[0.5px] border-outline-variant/30 flex justify-between items-center group">
+<code>npm install @learnlaunch/core-architecture</code>
+<button aria-label="Copy code" class="text-outline hover:text-primary transition-colors opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[18px]" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section: API Reference -->
+<section class="scroll-mt-24" id="api-reference">
+<h2 class="text-2xl font-headline font-bold text-on-surface mb-6 tracking-tight flex items-center gap-2">
+<span class="w-6 h-[2px] bg-primary inline-block"></span>
+                            API 说明与交互逻辑
+                        </h2>
+<p class="mb-6 text-on-surface-variant">
+                            系统的通信基于 RESTful 原则及高并发的 WebSocket 轨道。以下定义了核心控制层 (Control Plane) 的标准交互接口。
+                        </p>
+<!-- High-end UI Pattern: Bento Grid Style Endpoint Display -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<!-- Card 1 -->
+<div class="bg-surface border-[0.5px] border-outline-variant/20 p-5 rounded-lg group hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between mb-3">
+<span class="bg-surface-container-highest text-primary font-mono text-xs px-2 py-1 rounded font-semibold">POST</span>
+<span class="text-xs text-outline font-mono">/v2/agents/spawn</span>
+</div>
+<h4 class="font-semibold text-on-surface mb-2">实例化认知代理</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">根据预设的系统提示词和拓扑结构，在计算集群中分配并激活一个新的代理实例。</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface border-[0.5px] border-outline-variant/20 p-5 rounded-lg group hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between mb-3">
+<span class="bg-surface-container-high text-on-surface font-mono text-xs px-2 py-1 rounded font-semibold">GET</span>
+<span class="text-xs text-outline font-mono">/v2/metrics/telemetry</span>
+</div>
+<h4 class="font-semibold text-on-surface mb-2">获取遥测数据</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">提取当前活动代理队列的资源消耗率、推理延迟及 token 吞吐量。</p>
+</div>
+</div>
+<!-- Conceptual Code Example (Conversational Log Style as per DS) -->
+<div class="mt-8 border-l-[1px] border-outline-variant/30 pl-6 relative">
+<div class="absolute w-2 h-2 rounded-full bg-outline-variant -left-[4.5px] top-2"></div>
+<h4 class="text-sm font-semibold text-outline mb-4">数据流转示例</h4>
+<div class="space-y-4">
+<!-- Request Context -->
+<div class="bg-surface p-4 rounded text-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface block mb-1">Client Pipeline Request:</span>
+                                    Initiating synchronization sequence with primary agent construct...
+                                </div>
+<!-- Response Data -->
+<div class="bg-surface-container-low p-4 rounded text-sm font-mono text-on-surface overflow-x-auto relative">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary rounded-l"></div>
+<pre><code>{
+  "status": "synchronized",
+  "latency_ms": 42.8,
+  "vector_dimensions": 1536,
+  "active_nodes": ["alpha-01", "gamma-04"]
+}</code></pre>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Academic Guide -->
+<section class="scroll-mt-24" id="academic-guide">
+<h2 class="text-2xl font-headline font-bold text-on-surface mb-6 tracking-tight flex items-center gap-2">
+<span class="w-6 h-[2px] bg-primary inline-block"></span>
+                            学术指南与引用规范
+                        </h2>
+<p class="mb-4 text-on-surface-variant">
+                            学启航架构的理论基础建立在多篇同行评审的认知架构论文之上。在使用本平台进行学术研究并发表成果时，请遵循以下引用标准，以确保学术严谨性。
+                        </p>
+<!-- High-end UI Pattern: Formal Citation Box -->
+<div class="bg-surface-bright border-[0.5px] border-outline-variant/40 p-6 rounded relative overflow-hidden mt-6">
+<!-- Decorative background element for depth -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none"></div>
+<h5 class="text-xs uppercase tracking-wider font-semibold text-primary mb-3">APA 格式引用</h5>
+<p class="text-sm text-on-surface font-body leading-relaxed">
+                                LearnLaunch Architecture Team. (2023). <i>Theoretical Foundations of Distributed Cognitive Agents in Educational Contexts</i>. Journal of Advanced Synthetic Intelligence, 14(2), 112-145. https://doi.org/10.1016/j.jasi.2023.04.012
+                            </p>
+<div class="mt-4 pt-4 border-t-[0.5px] border-outline-variant/20 flex gap-3">
+<button class="px-4 py-1.5 bg-primary text-on-primary text-xs font-semibold rounded hover:bg-primary-dim transition-colors shadow-[0_4px_14px_rgba(44,94,167,0.2)]">
+                                    下载 BibTeX
+                                </button>
+<button class="px-4 py-1.5 bg-surface-container-high text-on-surface text-xs font-semibold rounded hover:bg-surface-dim transition-colors">
+                                    复制纯文本
+                                </button>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Spacing -->
+<div class="h-32"></div>
+</article>
+</main>
+<!-- Right Sidebar: In-Page Anchors (Mini TOC) -->
+<aside class="w-56 flex-shrink-0 bg-background overflow-y-auto hidden xl:block border-l-[0.5px] border-outline-variant/10">
+<div class="p-8 sticky top-0">
+<h4 class="font-label font-semibold text-xs uppercase tracking-wider text-outline mb-4">本页目录</h4>
+<nav class="space-y-3 font-label text-sm text-on-surface-variant">
+<a class="block hover:text-primary transition-colors hover:translate-x-1 transform duration-200" href="#quick-start">快速开始</a>
+<a class="block hover:text-primary transition-colors hover:translate-x-1 transform duration-200" href="#api-reference">API 说明与交互逻辑</a>
+<a class="block hover:text-primary transition-colors hover:translate-x-1 transform duration-200" href="#academic-guide">学术指南与引用规范</a>
+</nav>
+<!-- Feedback Module (Contextual Action) -->
+<div class="mt-12 pt-6 border-t-[0.5px] border-outline-variant/20">
+<p class="text-xs text-outline mb-3">这篇文档对您有帮助吗？</p>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center hover:bg-surface-container-highest transition-colors text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="thumb_up">thumb_up</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center hover:bg-surface-container-highest transition-colors text-on-surface-variant hover:text-error">
+<span class="material-symbols-outlined text-[16px]" data-icon="thumb_down">thumb_down</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</body></html>

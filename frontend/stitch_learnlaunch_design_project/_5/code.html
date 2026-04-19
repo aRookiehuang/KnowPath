@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>学启航 | 个人中心</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#2c5ea7",
+                        "tertiary-fixed": "#dfccfd",
+                        "secondary": "#565f72",
+                        "on-primary-container": "#002d61",
+                        "on-surface-variant": "#596064",
+                        "on-error-container": "#6e0a12",
+                        "on-error": "#fff7f6",
+                        "primary-fixed-dim": "#73a1ef",
+                        "surface-variant": "#dce4e8",
+                        "primary-container": "#81aefd",
+                        "on-secondary-fixed": "#373f51",
+                        "inverse-surface": "#0b0f10",
+                        "surface-container-highest": "#dce4e8",
+                        "background": "#f8f9fb",
+                        "surface-bright": "#f8f9fb",
+                        "inverse-on-surface": "#9a9d9f",
+                        "on-secondary-container": "#495264",
+                        "error": "#a83836",
+                        "primary": "#2c5ea7",
+                        "secondary-fixed-dim": "#ccd4ea",
+                        "tertiary": "#675882",
+                        "surface-container-high": "#e3e9ed",
+                        "on-secondary": "#f8f8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#3d2f56",
+                        "surface-dim": "#d4dbdf",
+                        "error-dim": "#67040d",
+                        "on-tertiary": "#fef7ff",
+                        "on-surface": "#2c3437",
+                        "on-primary-fixed": "#001431",
+                        "surface-container-low": "#f0f4f7",
+                        "on-background": "#2c3437",
+                        "secondary-container": "#dae2f9",
+                        "error-container": "#fa746f",
+                        "primary-fixed": "#81aefd",
+                        "tertiary-dim": "#5b4c75",
+                        "tertiary-fixed-dim": "#d1beee",
+                        "surface-container": "#eaeff2",
+                        "on-tertiary-fixed-variant": "#5a4b74",
+                        "tertiary-container": "#dfccfd",
+                        "surface": "#f8f9fb",
+                        "on-primary-fixed-variant": "#003671",
+                        "on-primary": "#f8f8ff",
+                        "inverse-primary": "#81aefd",
+                        "secondary-fixed": "#dae2f9",
+                        "primary-dim": "#1b529b",
+                        "on-secondary-fixed-variant": "#535c6e",
+                        "on-tertiary-container": "#50426a",
+                        "outline-variant": "#acb3b7",
+                        "secondary-dim": "#4a5365",
+                        "outline": "#747c80"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #f5f7f9; }
+        h1, h2, h3, .brand-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(44, 52, 55, 0.05);
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="text-on-surface bg-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f5f7f9] dark:bg-slate-950 border-b border-[#2c3437]/10 dark:border-slate-800">
+<div class="flex justify-between items-center px-6 py-3 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-[#2c5ea7] dark:text-blue-400 font-['Space_Grotesk']">Academic Architect</span>
+<nav class="hidden md:flex gap-6 font-['Space_Grotesk']">
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Classroom</a>
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Analytics</a>
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Execution Log</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all">settings</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/20">
+<img alt="Student avatar" data-alt="minimalist portrait of a professional student avatar with soft lighting and clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANWON2qIJ-Bb0ibIVDBxWge84NnJX0U4g2VK7bw69DbWF5GJkbudFBDzYBPldCAQRnGRbq5HU4HhoNu2VD-ARHitFdQIWnHJkBJ_T25Txe_PxKs0lJCcYSLseIrbX5xoIh69QlfXVFlvLDWqw4OSUfziG8ZfImNvWuvBPEtRtQdfQATdbYMfeLYE28FNrEWPirV_j1lsVdlcnxq5gUS80RgxRWDfGj3UWN6JRNY4RnScG7YIKHa_xg3J3aP5WvEQTJmt1Q35NozzV-"/>
+</div>
+</div>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 z-40 bg-[#f5f7f9] dark:bg-slate-900 border-r border-[#2c3437]/10 dark:border-slate-800 flex flex-col p-4 pt-20 gap-2 font-['Inter'] text-sm tracking-wide">
+<div class="mb-6 px-2">
+<h2 class="font-['Space_Grotesk'] font-bold text-[#2c3437] text-lg">Workbench</h2>
+<p class="text-xs text-[#2c3437]/50">AI Lab v1.2</p>
+</div>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all" href="#">
+<span class="material-symbols-outlined">school</span>
+<span>Current Session</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span>Knowledge Base</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span>Progress</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Activity Log</span>
+</a>
+<div class="mt-auto border-t border-outline-variant/10 pt-4">
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span>Help Center</span>
+</a>
+<button class="w-full mt-4 bg-primary text-on-primary py-2 rounded-lg font-medium hover:opacity-90 active:scale-95 transition-all">End Session</button>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="ml-64 pt-20 p-8 min-h-screen">
+<div class="max-w-5xl mx-auto">
+<!-- Page Header -->
+<div class="mb-12">
+<h1 class="text-4xl font-bold tracking-tight text-on-surface mb-2">个人中心</h1>
+<p class="text-on-surface-variant text-lg">Manage your academic profile and laboratory environment.</p>
+</div>
+<!-- Asymmetric Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Primary Settings -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Section 1: User Profile -->
+<section>
+<div class="flex items-center gap-4 mb-6">
+<span class="w-8 h-8 flex items-center justify-center bg-primary/10 text-primary rounded">
+<span class="material-symbols-outlined text-sm">person</span>
+</span>
+<h2 class="text-xl font-bold tracking-tight uppercase text-primary/80 text-xs">01 / 基本资料</h2>
+</div>
+<div class="space-y-8 pl-12 border-l border-outline-variant/20">
+<div class="flex items-center gap-6">
+<div class="relative group">
+<div class="w-24 h-24 rounded-lg bg-surface-container-high overflow-hidden border border-outline-variant/30 transition-all group-hover:opacity-80">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="clear detailed profile photo of a university student with academic vibes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe3s2CEbO4RQ1PuaL8pZ1hyo6ACTnXWBFKj_LdNo0_ETln8SLxMOqI_MpmZFB37HegJT7mE2Y34BMT6brNWXvAfXqYuUkXy7WNmCM03VyubPS2IgxiLAWg7wIPpKHtO2GtC0uqc00pbMnxa1YT6Ubg9tgeTmOyHK-ja0KAvKSoRIu5Hfc2I9PEvAaC9r833OF2NpqjbWfYC1kcjXiTtGoBJJLXcgPF-qTloUum6tyHMUECu93kSl9OnNS8kw_VV558TNLjZ3eVQ9RV"/>
+</div>
+<button class="absolute -bottom-2 -right-2 bg-white shadow-xl p-1.5 rounded-lg border border-outline-variant/20 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-base">cloud_upload</span>
+</button>
+</div>
+<div class="flex-1">
+<label class="block text-xs font-bold text-on-surface-variant uppercase mb-1">昵称</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:border-primary focus:ring-0 text-xl font-medium px-0 py-1 transition-all" type="text" value="林启航"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<label class="block text-xs font-bold text-on-surface-variant uppercase mb-1">学号</label>
+<p class="text-lg font-mono text-on-surface">SA-20240812</p>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant uppercase mb-1">邮箱</label>
+<p class="text-lg text-on-surface">lin.qh@academic.edu</p>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant uppercase mb-2">学术格言 / 简介</label>
+<textarea class="w-full bg-surface-container-low border-0 rounded-lg focus:ring-1 focus:ring-primary p-3 text-on-surface placeholder-outline-variant/50" placeholder="写下你的研究信念..." rows="3">求知若渴，虚心若愚。专注于人工智能辅助下的认知增强研究。</textarea>
+</div>
+</div>
+</section>
+<!-- Section 3: Security -->
+<section>
+<div class="flex items-center gap-4 mb-6">
+<span class="w-8 h-8 flex items-center justify-center bg-primary/10 text-primary rounded">
+<span class="material-symbols-outlined text-sm">shield</span>
+</span>
+<h2 class="text-xl font-bold tracking-tight uppercase text-primary/80 text-xs">02 / 安全与账户</h2>
+</div>
+<div class="space-y-6 pl-12 border-l border-outline-variant/20">
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/10">
+<div>
+<h4 class="font-medium">账号密码</h4>
+<p class="text-sm text-on-surface-variant">上次修改于 3个月前</p>
+</div>
+<button class="px-4 py-1.5 text-xs font-bold border border-outline-variant/30 rounded-lg hover:bg-surface-container-high transition-colors">修改密码</button>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">link</span>
+<div>
+<h4 class="font-medium">关联账号</h4>
+<div class="flex gap-2 mt-1">
+<span class="px-2 py-0.5 bg-surface-container-high rounded text-[10px] font-bold uppercase text-secondary">WeChat</span>
+<span class="px-2 py-0.5 bg-primary/10 rounded text-[10px] font-bold uppercase text-primary">GitHub</span>
+</div>
+</div>
+</div>
+<button class="text-primary text-sm font-medium hover:underline">管理关联</button>
+</div>
+<div class="flex items-center justify-between py-2">
+<div>
+<h4 class="font-medium">双重身份验证</h4>
+<p class="text-sm text-on-surface-variant">增强账号登录安全性</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Contextual Data & Preferences -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Section 2: Academic Level (High-End Progress Card) -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/10 shadow-[0_20px_40px_rgba(44,94,167,0.06)]">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-xs font-bold text-primary uppercase tracking-widest mb-1">学术等级</h3>
+<p class="text-2xl font-bold font-['Space_Grotesk'] text-on-surface">Level 4 Researcher</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl opacity-20">biotech</span>
+</div>
+<div class="mb-6">
+<div class="flex justify-between text-xs font-bold uppercase text-on-surface-variant mb-2">
+<span>经验值 (XP)</span>
+<span>7,420 / 10,000</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 74.2%"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded">
+<p class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">累计时长</p>
+<p class="text-lg font-bold">128h</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded">
+<p class="text-[10px] font-bold text-on-surface-variant uppercase mb-1">研究成果</p>
+<p class="text-lg font-bold">32</p>
+</div>
+</div>
+</div>
+<!-- Section 4: Preferences -->
+<section class="bg-surface-container-low/50 p-6 rounded-lg">
+<h2 class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-6">实验室偏好</h2>
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase text-on-surface-variant">界面语言</label>
+<select class="w-full bg-surface-container-lowest border-0 rounded-lg text-sm font-medium py-2 focus:ring-1 focus:ring-primary">
+<option selected="">简体中文 (Chinese)</option>
+<option>English (US)</option>
+<option>日本語 (Japanese)</option>
+</select>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-sm font-medium">深色模式</span>
+<div class="flex p-1 bg-surface-container-highest rounded-lg">
+<button class="p-1.5 rounded-md bg-white shadow-sm text-primary">
+<span class="material-symbols-outlined text-sm">light_mode</span>
+</button>
+<button class="p-1.5 rounded-md text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-sm">dark_mode</span>
+</button>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-sm font-medium">系统通知</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium">开发者调试模式</span>
+<span class="px-1.5 py-0.5 bg-tertiary-container text-on-tertiary-container text-[9px] font-bold rounded uppercase tracking-tighter">Beta</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Global Action -->
+<div class="pt-4">
+<button class="w-full flex items-center justify-center gap-2 py-3 border border-error/20 text-error font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-error/5 transition-colors">
+<span class="material-symbols-outlined text-sm">logout</span>
+                            退出登录
+                        </button>
+</div>
+</div>
+</div>
+<!-- Footer / System Info -->
+<footer class="mt-20 pt-8 border-t border-outline-variant/10 flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/40">
+<div>Academic Architect Systems © 2024</div>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#">隐私政策</a>
+<a class="hover:text-primary transition-colors" href="#">服务条款</a>
+</div>
+</footer>
+</div>
+</main>
+</body></html>

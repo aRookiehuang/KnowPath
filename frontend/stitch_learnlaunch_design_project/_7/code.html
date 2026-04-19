@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#dfccfd",
+                    "inverse-primary": "#81aefd",
+                    "secondary-container": "#dae2f9",
+                    "error-container": "#fa746f",
+                    "inverse-surface": "#0b0f10",
+                    "secondary-fixed": "#dae2f9",
+                    "outline": "#747c80",
+                    "secondary-fixed-dim": "#ccd4ea",
+                    "surface-container-highest": "#dce4e8",
+                    "surface-bright": "#f8f9fb",
+                    "on-background": "#2c3437",
+                    "on-tertiary": "#fef7ff",
+                    "surface": "#f8f9fb",
+                    "primary": "#2c5ea7",
+                    "on-secondary-fixed": "#373f51",
+                    "primary-fixed": "#81aefd",
+                    "surface-dim": "#d4dbdf",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#565f72",
+                    "on-surface": "#2c3437",
+                    "on-tertiary-container": "#50426a",
+                    "surface-variant": "#dce4e8",
+                    "on-primary": "#f8f8ff",
+                    "surface-container": "#eaeff2",
+                    "tertiary": "#675882",
+                    "on-tertiary-fixed": "#3d2f56",
+                    "primary-fixed-dim": "#73a1ef",
+                    "on-primary-fixed": "#001431",
+                    "on-secondary-fixed-variant": "#535c6e",
+                    "on-error": "#fff7f6",
+                    "primary-container": "#81aefd",
+                    "outline-variant": "#acb3b7",
+                    "tertiary-container": "#dfccfd",
+                    "secondary-dim": "#4a5365",
+                    "on-surface-variant": "#596064",
+                    "error-dim": "#67040d",
+                    "on-secondary-container": "#495264",
+                    "inverse-on-surface": "#9a9d9f",
+                    "on-error-container": "#6e0a12",
+                    "primary-dim": "#1b529b",
+                    "surface-tint": "#2c5ea7",
+                    "surface-container-high": "#e3e9ed",
+                    "error": "#a83836",
+                    "on-tertiary-fixed-variant": "#5a4b74",
+                    "on-primary-fixed-variant": "#003671",
+                    "surface-container-low": "#f0f4f7",
+                    "tertiary-fixed-dim": "#d1beee",
+                    "background": "#f8f9fb",
+                    "on-secondary": "#f8f8ff",
+                    "tertiary-dim": "#5b4c75",
+                    "on-primary-container": "#002d61"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fb; color: #2c3437; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar Implementation -->
+<nav class="bg-[#f5f7f9] dark:bg-slate-900 border-b-[0.5px] border-slate-300/20 dark:border-slate-700/20 w-full sticky top-0 z-50 flex justify-between items-center px-6 h-16 w-full font-['Space_Grotesk'] tracking-tight">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#2c3437] dark:text-white font-['Space_Grotesk']">LearnLaunch</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] hover:bg-[#2c5ea7]/5 transition-colors duration-200 ease-in-out" href="#">Curriculum</a>
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] hover:bg-[#2c5ea7]/5 transition-colors duration-200 ease-in-out" href="#">Workbench</a>
+<a class="text-[#2c3437]/70 dark:text-slate-400 hover:text-[#2c5ea7] hover:bg-[#2c5ea7]/5 transition-colors duration-200 ease-in-out" href="#">Library</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2c3437]/70 cursor-pointer">notifications</span>
+<span class="material-symbols-outlined text-[#2c3437]/70 cursor-pointer">settings</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="Student Profile Avatar" data-alt="minimalist academic avatar of a person wearing glasses and professional attire in clean vector style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmBYkew8jh3HuyEIHUQPkbuJ0p0qQxGBRcmNw5zbWkXtXQJ15gqjzQ_QbM74_ORtKmIiYjp70HGW8lTYoaQ-9oWaY95t-JlkwgPPZ_slkUS_7Lg3V5UUvpU95t7EchhdNvBLCYA7xDDADzNjS1TJlG7jYRfxH3EMLvuIwzuqLW3GeklqrnV42NQ1AKku-79SHZFN_GK3mRcf1bYA9qeyxpZS53mofn6XLDy1A5REMkC_EbdoWzP7vW-sL2f_NTM4iS40BtQ1XjqC8R"/>
+</div>
+</div>
+</nav>
+<div class="flex min-h-screen">
+<!-- SideNavBar Implementation -->
+<aside class="h-screen w-64 fixed left-0 top-0 pt-16 bg-[#f5f7f9] border-r-[0.5px] border-slate-300/20 flex flex-col h-full py-4 font-['Inter'] text-sm font-medium z-40">
+<div class="px-6 py-6 border-b-[0.5px] border-slate-300/10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary/10 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<div>
+<div class="text-on-surface font-semibold">The Researcher</div>
+<div class="text-xs text-on-surface/60">Level 42 Architect</div>
+</div>
+</div>
+</div>
+<div class="flex-grow py-4">
+<a class="flex items-center gap-3 px-6 py-3 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 bg-white text-[#2c5ea7] border-l-4 border-[#2c5ea7] transition-all duration-200 scale-[0.98]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>Achievements</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span>Journal</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">science</span>
+<span>Research Hub</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span>Resources</span>
+</a>
+</div>
+<button class="mx-6 mb-8 py-2.5 bg-primary text-on-primary rounded-lg font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+                New Experiment
+            </button>
+<div class="border-t-[0.5px] border-slate-300/10 py-4">
+<a class="flex items-center gap-3 px-6 py-2 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span>Support</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-2 text-[#2c3437]/60 hover:bg-slate-200/50 transition-all" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Sign Out</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 flex-grow p-8">
+<!-- Header Section -->
+<div class="max-w-6xl mx-auto mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h1 class="text-4xl font-headline font-bold text-on-surface mb-2">我的成就 (My Achievements)</h1>
+<p class="text-on-surface-variant font-body">学术架构师的进化轨迹：记录每一个知识节点的突破。</p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container-lowest p-4 px-6 border-l-2 border-primary">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">当前等级</div>
+<div class="text-2xl font-headline font-bold text-primary">Level 42</div>
+</div>
+<div class="bg-surface-container-lowest p-4 px-6 border-l-2 border-primary">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">经验值 (XP)</div>
+<div class="text-2xl font-headline font-bold text-primary">12,450</div>
+</div>
+<div class="bg-surface-container-lowest p-4 px-6 border-l-2 border-primary">
+<div class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mb-1">勋章总数</div>
+<div class="text-2xl font-headline font-bold text-primary">24 / 48</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dashboard Grid Layout -->
+<div class="max-w-6xl mx-auto grid grid-cols-12 gap-8">
+<!-- Left: Achievements Grid -->
+<div class="col-span-12 lg:col-span-8">
+<!-- Filters -->
+<div class="flex items-center gap-2 mb-6 bg-surface-container-low p-1 w-fit rounded-lg">
+<button class="px-6 py-2 bg-surface-container-lowest text-primary font-bold text-sm rounded-lg">全部 (All)</button>
+<button class="px-6 py-2 text-on-surface-variant hover:text-primary font-medium text-sm transition-colors">已解锁 (Unlocked)</button>
+<button class="px-6 py-2 text-on-surface-variant hover:text-primary font-medium text-sm transition-colors">未解锁 (Locked)</button>
+</div>
+<!-- Achievement Cards Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Unlocked Card 1 -->
+<div class="bg-surface-container-lowest p-6 flex items-start gap-5 relative group transition-all hover:bg-white border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">初探量子 (Quantum Explorer)</h3>
+<span class="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">已解锁</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">完成首个量子力学导论模块并获得全优评分。</p>
+<div class="flex items-center gap-2 text-[11px] text-outline">
+<span class="material-symbols-outlined text-xs">calendar_today</span>
+                                    解锁于: 2023.10.12
+                                </div>
+</div>
+</div>
+<!-- Unlocked Card 2 -->
+<div class="bg-surface-container-lowest p-6 flex items-start gap-5 relative group transition-all hover:bg-white border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">意志坚定 (Stoic Consistency)</h3>
+<span class="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">已解锁</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">连续 30 天完成每日深度学习任务，无一中断。</p>
+<div class="flex items-center gap-2 text-[11px] text-outline">
+<span class="material-symbols-outlined text-xs">calendar_today</span>
+                                    解锁于: 2023.11.05
+                                </div>
+</div>
+</div>
+<!-- Locked Card 1 -->
+<div class="bg-surface-container-low p-6 flex items-start gap-5 relative opacity-70 grayscale">
+<div class="w-16 h-16 bg-slate-200 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-slate-500 text-3xl">psychology</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">深度思辨 (Deep Critical Thinker)</h3>
+<span class="material-symbols-outlined text-xs text-outline">lock</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">在辩论研讨会中引用超过 50 篇经过同行评审的文献。</p>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-outline h-full" style="width: 65%;"></div>
+</div>
+<div class="mt-2 flex justify-between text-[11px] text-outline">
+<span>解锁进度</span>
+<span>32 / 50</span>
+</div>
+</div>
+</div>
+<!-- Locked Card 2 -->
+<div class="bg-surface-container-low p-6 flex items-start gap-5 relative opacity-70 grayscale">
+<div class="w-16 h-16 bg-slate-200 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-slate-500 text-3xl">hub</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">全能型选手 (The Polymath)</h3>
+<span class="material-symbols-outlined text-xs text-outline">lock</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">在三个不相关的学科领域（STEM, 艺术, 哲学）均达到 Level 20。</p>
+<div class="mt-4 flex gap-2">
+<span class="text-[10px] bg-slate-200 text-slate-600 px-2 py-0.5 rounded">未解锁</span>
+</div>
+</div>
+</div>
+<!-- Unlocked Card 3 -->
+<div class="bg-surface-container-lowest p-6 flex items-start gap-5 relative group transition-all hover:bg-white border-b-2 border-transparent hover:border-primary transition-all duration-300">
+<div class="w-16 h-16 bg-primary/5 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">算法工匠 (Algorithm Artisan)</h3>
+<span class="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded font-bold">已解锁</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">独立重构并优化分布式系统的核心排序逻辑。</p>
+<div class="flex items-center gap-2 text-[11px] text-outline">
+<span class="material-symbols-outlined text-xs">calendar_today</span>
+                                    解锁于: 2024.01.20
+                                </div>
+</div>
+</div>
+<!-- Locked Card 3 -->
+<div class="bg-surface-container-low p-6 flex items-start gap-5 relative opacity-70 grayscale">
+<div class="w-16 h-16 bg-slate-200 flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined text-slate-500 text-3xl">auto_stories</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline font-bold text-lg">知识灯塔 (Lighthouse)</h3>
+<span class="material-symbols-outlined text-xs text-outline">lock</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 leading-relaxed">你的学术研究笔记被超过 100 名同学收藏或引用。</p>
+<div class="mt-4 flex gap-2">
+<span class="text-[10px] bg-slate-200 text-slate-600 px-2 py-0.5 rounded">锁定中</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Progress Breakdown -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
+<!-- Side Progress Card -->
+<div class="bg-surface-container-lowest p-8 border-[0.5px] border-slate-300/20">
+<h3 class="font-headline font-bold text-xl mb-6">经验值分布 (XP Sources)</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-medium">每日任务 (Daily Quests)</span>
+<span class="text-xs font-bold text-primary">+4,200 XP</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full">
+<div class="bg-primary h-full" style="width: 35%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-medium">里程碑奖励 (Milestone Bonus)</span>
+<span class="text-xs font-bold text-primary">+6,800 XP</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full">
+<div class="bg-primary h-full" style="width: 55%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-medium">社区贡献 (Community Contribution)</span>
+<span class="text-xs font-bold text-primary">+1,450 XP</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full">
+<div class="bg-primary h-full" style="width: 12%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-10 p-6 bg-primary text-on-primary rounded-lg relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-headline font-bold mb-2">即将解锁</h4>
+<p class="text-xs text-on-primary/80 mb-4">再获得 550 XP 即可晋升至 Level 43</p>
+<button class="w-full py-2 bg-white/10 hover:bg-white/20 transition-colors text-xs font-bold rounded">查看升级奖励</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-7xl text-white/10 rotate-12">trending_up</span>
+</div>
+</div>
+<!-- Level Badge Display -->
+<div class="bg-surface-container-lowest p-6 border-[0.5px] border-slate-300/20">
+<h4 class="font-headline font-bold text-sm text-outline uppercase tracking-widest mb-4">顶级荣誉勋章</h4>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full border-2 border-primary/20 flex items-center justify-center p-1">
+<img alt="Special Achievement Badge" class="w-full h-full opacity-80" data-alt="geometric circular abstract emblem in intelligence blue and silver tones denoting academic mastery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmD1ANrGmbowpyLV7_0dOV4RbjnZSocF7IGwKmlMaC6DKCpy70PrXR0wbX4lMgTpjT69xjHII-p7Z9wpdwGlSKu_FYla_W_yKS_D-QpW2FWbVE_sQFXsnZmO3A5YBqIvc5CcdmftxZT9wc9Fb1Uy5GZ5cjz85qy1Li6DYVjFiF8mOOApgMuZUoWE1QKIyVHq3NdFvt22OeBsK0dVnX-cTLDGVvCIwmZD4KcTQZot6M5qeL7U6wev8BSWwQ0AS01ZJ3DgoAzx1L4jZ9"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-primary/20 flex items-center justify-center p-1">
+<img alt="Special Achievement Badge" class="w-full h-full opacity-80" data-alt="hexagonal stylized star pattern in primary blue symbolizing research excellence and deep learning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8QuMu4MXa_9vtGfD_CthJZdGNhZAz-IjLNVTWRSprp6oZSZ_GvxCQRPSV162j9lt0QDcc69cl-Ns7UQ7j1h1XEJ9KH4ka-V8OUGdfEXPFA549fxAM-tAgS5n-Qb8AwuQ2_qCJpgXoHbykbCG9LzJHzbXLzKwpCVBXHDohEi1sXWrrfDLuSHoLxZcsirFw9oqxtyWz73I3t4ICz-tSwnUpqx8Nv5Th9Z1JVULCcjKHoPr_bUrVqDba3a4Inl8VJ-4Tqr2H-R88aXXu"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-primary/10 flex items-center justify-center p-1 grayscale opacity-50">
+<img alt="Locked Badge" class="w-full h-full" data-alt="abstract crystalline shape in grey and white representing an unearned higher academic level badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0tX4sB6fhqIV_A7fytnfDrFNRCUdUyX0reyWJlUXGDJdhDSSBFfukcljiaKE-_KUjQfaOQIEFjR6ATV-oZYfcggcNtcuUZcqtZuS_vqhM9Dhds124yVIgK9qBK43cs9VqOwwWgA3Uj2lrZnURADVqpNgz_-Lew6al6Ue2vRKCa9JjTvoe-PshsXMF867_pKMgZpT8IuvKItgXuE93bQ8_Mhic9oBUvgMQfQKjVqMWWPLS7yWSKX4cY6zfrdKaxQ1tXpqzRGLsk_u9"/>
+</div>
+</div>
+</div>
+<!-- Journal Preview Card -->
+<div class="bg-surface-container-lowest overflow-hidden border-[0.5px] border-slate-300/20 group cursor-pointer">
+<div class="h-32 bg-slate-200 overflow-hidden relative">
+<img alt="Learning Journal Cover" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="overhead view of a clean desk with a laptop open showing scientific code and a notebook with geometric drawings in bright studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6-A8XX3WCSLXR3ppOM6L1-uWUAzb5uKrnbqgTRn85QXFdlTH4ZyuGuIS7c2PEuJwsPTN3GaOEsWTdEheZb0jYBppboJEsresGxxcO_SgdHWfhBFlXNdnBZOp2KrxKtEIzvypytrAeCwct1y7kFXeHuN40OA-fqqvcQHgSqQMjtl2zqnVacQ_1vQHIUuNxqiCauUriavuELcVEdZS7Ue0yNnNllF0GPFonq6_QOsZw6NczRwSp-xuMoDNTr3qrqKUmfXVJpGifexIA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-headline font-bold">查看成长日志</div>
+</div>
+<div class="p-4">
+<p class="text-xs text-on-surface-variant leading-relaxed">“第 42 级的达成标志着我在跨学科建模方面的重大进步...”</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

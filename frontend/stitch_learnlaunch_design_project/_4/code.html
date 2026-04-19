@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LearnLaunch Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f0f4f7",
+                        "on-primary-container": "#002d61",
+                        "secondary-dim": "#4a5365",
+                        "surface-dim": "#d4dbdf",
+                        "on-tertiary-fixed": "#3d2f56",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ccd4ea",
+                        "on-secondary-fixed-variant": "#535c6e",
+                        "on-secondary-fixed": "#373f51",
+                        "on-surface-variant": "#596064",
+                        "background": "#f8f9fb",
+                        "error-container": "#fa746f",
+                        "outline": "#747c80",
+                        "on-error": "#fff7f6",
+                        "secondary-fixed": "#dae2f9",
+                        "tertiary-fixed-dim": "#d1beee",
+                        "inverse-surface": "#0b0f10",
+                        "on-error-container": "#6e0a12",
+                        "error": "#a83836",
+                        "tertiary-dim": "#5b4c75",
+                        "on-primary-fixed-variant": "#003671",
+                        "secondary-container": "#dae2f9",
+                        "on-secondary": "#f8f8ff",
+                        "surface-bright": "#f8f9fb",
+                        "on-primary-fixed": "#001431",
+                        "primary": "#2c5ea7",
+                        "on-tertiary-container": "#50426a",
+                        "primary-fixed": "#81aefd",
+                        "tertiary-container": "#dfccfd",
+                        "primary-dim": "#1b529b",
+                        "on-background": "#2c3437",
+                        "tertiary-fixed": "#dfccfd",
+                        "outline-variant": "#acb3b7",
+                        "surface-variant": "#dce4e8",
+                        "primary-container": "#81aefd",
+                        "surface-tint": "#2c5ea7",
+                        "on-secondary-container": "#495264",
+                        "inverse-primary": "#81aefd",
+                        "primary-fixed-dim": "#73a1ef",
+                        "inverse-on-surface": "#9a9d9f",
+                        "on-tertiary-fixed-variant": "#5a4b74",
+                        "surface": "#f8f9fb",
+                        "secondary": "#565f72",
+                        "tertiary": "#675882",
+                        "on-surface": "#2c3437",
+                        "surface-container": "#eaeff2",
+                        "on-tertiary": "#fef7ff",
+                        "on-primary": "#f8f8ff",
+                        "surface-container-highest": "#dce4e8",
+                        "error-dim": "#67040d",
+                        "surface-container-high": "#e3e9ed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#f5f7f9] dark:bg-slate-950 border-b border-[#2c3437]/10 dark:border-white/10 z-50 font-['Space_Grotesk'] tracking-tight">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#2c3437] dark:text-slate-100">LearnLaunch</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-[#2c5ea7] border-b-2 border-[#2c5ea7] pb-1 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Dashboard</a>
+<a class="text-[#2c3437]/60 dark:text-slate-400 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Pathways</a>
+<a class="text-[#2c3437]/60 dark:text-slate-400 hover:text-[#2c5ea7] transition-colors duration-200" href="#">Research</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+<input class="bg-surface-container border-none text-sm pl-10 pr-4 py-1.5 w-64 rounded-lg focus:ring-1 focus:ring-primary" placeholder="Search knowledge..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">settings</button>
+<img alt="Student Profile Avatar" class="w-8 h-8 rounded-full border border-outline-variant/20" data-alt="close-up portrait of a professional student profile avatar in a clean, academic style with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBegnPEjEOFMOLuaNjB18rgANRj8lBhVaV8jd_OSyhdg6Ydacc0BYa4Lq4lmWZjLhfwii5RTe6JzpMBnpfgSiSZU11K68a9bvhUKsIR6zs2L2QCM2Cs5uire8X7rZESzX3_og2MrecjwfVFf37e4Kz5haEQK2np778zcaD2zjUA9E53gtbGl0I_lyGAqo7otb7whDtfuboCftmbUwIhaXpcvEQP2mEi5e8_1RpiDl1wPMHeSvyAKS33XJTm3apT2AM3Ls6Y3WcfmaAm"/>
+</div>
+</header>
+<!-- SideNavBar (Workbench) -->
+<aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-[#f5f7f9] dark:bg-slate-900 border-r border-[#2c3437]/5 dark:border-white/5 flex flex-col py-4 px-3 gap-y-2 font-['Inter'] text-sm font-medium z-40">
+<div class="px-3 py-4 mb-4 flex items-center gap-3 bg-surface-container-lowest dark:bg-slate-800/40 rounded-lg">
+<div class="w-10 h-10 bg-primary-container rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container">school</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Thinking Workbench</p>
+<p class="text-xs text-on-surface-variant">Level 4 Researcher</p>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg flex items-center justify-center gap-2 mb-4 hover:opacity-90 active:scale-[0.98] transition-all font-semibold">
+<span class="material-symbols-outlined text-sm">add_circle</span>
+            New Goal Clarification
+        </button>
+<nav class="flex-1 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 bg-white dark:bg-slate-800 text-[#2c5ea7] border-l-4 border-[#2c5ea7] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">biotech</span>
+                Workbench
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">account_tree</span>
+                Knowledge Graph
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">analytics</span>
+                Analytics
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+                Resources
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                Archive
+            </a>
+</nav>
+<div class="mt-auto pt-4 border-t border-outline-variant/10">
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 transition-all" href="#">
+<span class="material-symbols-outlined">history_edu</span>
+                System Logs
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#2c3437]/70 dark:text-slate-400 hover:bg-slate-200/50 transition-all" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+                Help
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 mt-16 p-8 min-h-screen">
+<div class="max-w-6xl mx-auto">
+<!-- Welcome Header -->
+<header class="mb-10">
+<h1 class="text-4xl font-bold tracking-tight text-on-surface mb-2">你好，探索者</h1>
+<p class="text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    当前重点：量子场论导论 • 学习效率 92%
+                </p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-6 items-start">
+<!-- Main Action Area (Continue Learning) -->
+<div class="col-span-12 lg:col-span-8 space-y-6">
+<div class="bg-surface-container-lowest rounded-lg border-l-4 border-primary p-8 shadow-[0_20px_40px_rgba(44,94,167,0.04)]">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-xs uppercase tracking-widest text-primary font-bold mb-1">正在进行</h3>
+<h2 class="text-2xl font-bold">高级神经网络架构</h2>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">42% 完成</span>
+</div>
+<div class="w-full bg-surface-container h-1 mb-8">
+<div class="bg-primary h-full w-[42%]"></div>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg flex items-center gap-2 font-semibold hover:opacity-90 transition-all">
+                                Continue Learning
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2.5 rounded-lg font-semibold hover:bg-surface-container-highest transition-all">
+                                查看详情
+                            </button>
+</div>
+</div>
+<!-- Learning Paths Grid -->
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-surface-container-low rounded-lg p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="text-xs font-bold text-on-surface-variant">路径 A</span>
+</div>
+<h4 class="font-bold text-lg mb-2">算法分析</h4>
+<p class="text-sm text-on-surface-variant mb-4">深入研究 Big O 表示法和动态规划。</p>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-container-highest flex items-center justify-center text-[10px]">ML</div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-container-highest flex items-center justify-center text-[10px]">DS</div>
+</div>
+<span class="text-xs text-on-surface-variant">+12 模块</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="text-xs font-bold text-on-surface-variant">路径 B</span>
+</div>
+<h4 class="font-bold text-lg mb-2">系统架构</h4>
+<p class="text-sm text-on-surface-variant mb-4">学习分布式系统和微服务模式。</p>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-container-highest flex items-center justify-center text-[10px]">AWS</div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-container-highest flex items-center justify-center text-[10px]">K8S</div>
+</div>
+<span class="text-xs text-on-surface-variant">+8 模块</span>
+</div>
+</div>
+</div>
+<!-- Academic Log (Conversational Style) -->
+<div class="bg-surface-container-low/50 rounded-lg p-6 relative">
+<div class="absolute left-6 top-8 bottom-8 w-px bg-outline-variant/30"></div>
+<h3 class="font-bold mb-6 pl-6 text-sm uppercase tracking-wider text-on-surface-variant">思维日志</h3>
+<div class="space-y-6 pl-6">
+<div class="relative">
+<span class="absolute -left-[27px] top-1 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface"></span>
+<p class="text-xs text-on-surface-variant mb-1">今日 14:20</p>
+<div class="bg-surface-container-lowest p-4 rounded-lg border-l-2 border-primary">
+<p class="text-sm">完成了《Transformer 架构》的深度阅读。需要进一步澄清注意机制中“缩放点积”的作用。</p>
+</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[27px] top-1 w-2.5 h-2.5 rounded-full bg-outline-variant border-2 border-surface"></span>
+<p class="text-xs text-on-surface-variant mb-1">今日 10:15</p>
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-sm">系统记录：已将“拓扑排序”添加到资源库。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Metrics & Side Info -->
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<!-- Performance Metrics -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm border border-outline-variant/5">
+<h3 class="font-bold mb-6 text-sm uppercase tracking-wider">核心指标</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-background rounded border border-outline-variant/10">
+<p class="text-xs text-on-surface-variant mb-1">LSS (学习力)</p>
+<p class="text-2xl font-bold font-headline">85.4</p>
+</div>
+<div class="p-4 bg-background rounded border border-outline-variant/10">
+<p class="text-xs text-on-surface-variant mb-1">KTL (知识量)</p>
+<p class="text-2xl font-bold font-headline">1.2k</p>
+</div>
+<div class="p-4 bg-background rounded border border-outline-variant/10">
+<p class="text-xs text-on-surface-variant mb-1">LF (焦点)</p>
+<p class="text-2xl font-bold font-headline">0.92</p>
+</div>
+<div class="p-4 bg-background rounded border border-outline-variant/10">
+<p class="text-xs text-on-surface-variant mb-1">LSB (稳定性)</p>
+<p class="text-2xl font-bold font-headline">94%</p>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-outline-variant/10">
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-medium">本月学习时长</span>
+<span class="text-sm font-bold">124h</span>
+</div>
+<div class="flex gap-1 h-2">
+<div class="flex-1 bg-primary rounded-full opacity-20"></div>
+<div class="flex-1 bg-primary rounded-full opacity-40"></div>
+<div class="flex-1 bg-primary rounded-full opacity-60"></div>
+<div class="flex-1 bg-primary rounded-full"></div>
+<div class="flex-1 bg-surface-container-highest rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Learning Calendar -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm border border-outline-variant/5">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-bold text-sm uppercase tracking-wider">学习日程</h3>
+<button class="material-symbols-outlined text-outline">chevron_right</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="text-center w-10">
+<p class="text-xs font-bold text-primary">Mon</p>
+<p class="text-lg font-bold">12</p>
+</div>
+<div class="flex-1 px-3 py-2 bg-surface-container rounded border-l-2 border-primary">
+<p class="text-xs font-bold">09:00 - 11:30</p>
+<p class="text-sm truncate">线性代数复习</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-center w-10">
+<p class="text-xs font-bold text-on-surface-variant">Tue</p>
+<p class="text-lg font-bold">13</p>
+</div>
+<div class="flex-1 px-3 py-2 bg-background rounded border-l-2 border-outline-variant/30">
+<p class="text-xs font-bold">14:00 - 16:00</p>
+<p class="text-sm truncate">研讨会：分布式共识</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-center w-10">
+<p class="text-xs font-bold text-on-surface-variant">Wed</p>
+<p class="text-lg font-bold">14</p>
+</div>
+<div class="flex-1 px-3 py-2 bg-background rounded border-l-2 border-outline-variant/30">
+<p class="text-xs font-bold">10:00 - 12:00</p>
+<p class="text-sm truncate">深度学习作业</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Task Summary -->
+<div class="bg-primary/5 rounded-lg p-6 border border-primary/10">
+<h3 class="font-bold text-sm mb-4">任务完成情况</h3>
+<div class="flex items-end gap-2 mb-2">
+<span class="text-4xl font-bold text-primary">28</span>
+<span class="text-sm text-on-surface-variant mb-1">/ 35 任务</span>
+</div>
+<p class="text-xs text-on-surface-variant">比上周增加 +12%</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action for Mobile / Contextual Help -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center hover:scale-105 transition-transform z-50">
+<span class="material-symbols-outlined">auto_awesome</span>
+</button>
+</body></html>

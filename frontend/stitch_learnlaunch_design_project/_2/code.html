@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>注册 - 学启航</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#9a9d9f",
+                      "surface-container-high": "#e3e9ed",
+                      "tertiary-fixed-dim": "#d1beee",
+                      "on-primary-fixed-variant": "#003671",
+                      "error-container": "#fa746f",
+                      "on-tertiary": "#fef7ff",
+                      "inverse-primary": "#81aefd",
+                      "error": "#a83836",
+                      "secondary-fixed": "#dae2f9",
+                      "surface-bright": "#f8f9fb",
+                      "tertiary": "#675882",
+                      "secondary-container": "#dae2f9",
+                      "outline-variant": "#acb3b7",
+                      "on-background": "#2c3437",
+                      "on-primary-fixed": "#001431",
+                      "secondary-fixed-dim": "#ccd4ea",
+                      "on-primary": "#f8f8ff",
+                      "tertiary-container": "#dfccfd",
+                      "tertiary-fixed": "#dfccfd",
+                      "on-secondary-fixed-variant": "#535c6e",
+                      "on-tertiary-fixed": "#3d2f56",
+                      "surface": "#f8f9fb",
+                      "primary-fixed": "#81aefd",
+                      "outline": "#747c80",
+                      "on-tertiary-container": "#50426a",
+                      "on-surface-variant": "#596064",
+                      "on-primary-container": "#002d61",
+                      "primary-fixed-dim": "#73a1ef",
+                      "primary": "#2c5ea7",
+                      "on-surface": "#2c3437",
+                      "on-secondary-container": "#495264",
+                      "surface-container-highest": "#dce4e8",
+                      "error-dim": "#67040d",
+                      "background": "#f8f9fb",
+                      "surface-variant": "#dce4e8",
+                      "secondary": "#565f72",
+                      "on-tertiary-fixed-variant": "#5a4b74",
+                      "surface-container-low": "#f0f4f7",
+                      "surface-tint": "#2c5ea7",
+                      "on-secondary-fixed": "#373f51",
+                      "inverse-surface": "#0b0f10",
+                      "secondary-dim": "#4a5365",
+                      "on-error-container": "#6e0a12",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-dim": "#1b529b",
+                      "surface-dim": "#d4dbdf",
+                      "on-secondary": "#f8f8ff",
+                      "on-error": "#fff7f6",
+                      "tertiary-dim": "#5b4c75",
+                      "surface-container": "#eaeff2",
+                      "primary-container": "#81aefd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": [
+                              "Space Grotesk"
+                      ],
+                      "body": [
+                              "Inter",
+                              "sans-serif"
+                      ],
+                      "label": [
+                              "Inter",
+                              "sans-serif"
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        /* Blueprint grid effect using linear gradients */
+        .bg-blueprint {
+            background-color: var(--tw-colors-surface-container-low);
+            background-image: 
+                linear-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px),
+                linear-gradient(90deg, var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center center;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex selection:bg-primary-container selection:text-on-primary-container">
+<!-- Left Structural Column: Branding & Blueprint (Asymmetrical Rationalism) -->
+<div class="hidden lg:flex lg:w-5/12 xl:w-1/2 relative flex-col justify-between p-12 overflow-hidden border-r border-outline-variant/20">
+<!-- Generative Academic Background via CSS Grid pattern defined above -->
+<div class="absolute inset-0 bg-blueprint pointer-events-none"></div>
+<!-- Subtle architectural overlay line -->
+<div class="absolute top-0 bottom-0 left-24 w-[1px] bg-outline-variant/20"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 text-primary mb-12">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+<span class="font-headline font-bold text-2xl tracking-tight text-on-surface">学启航</span>
+</div>
+<h2 class="font-headline text-5xl font-bold text-on-surface leading-tight mt-24">
+                构建您的<br/>
+<span class="text-primary">学术图谱</span>
+</h2>
+<p class="font-body text-on-surface-variant mt-6 max-w-md text-lg leading-relaxed">
+                加入结构化的研究工作台。在这里，灵感与数据严谨交汇，探索未知的边界。
+            </p>
+</div>
+<div class="relative z-10 font-label text-sm text-on-surface-variant mt-auto">
+            © 2024 LearnLaunch. 认知架构系统 v2.1
+        </div>
+</div>
+<!-- Right Column: Registration Form (Canvas) -->
+<div class="w-full lg:w-7/12 xl:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-surface-container-lowest">
+<div class="w-full max-w-md">
+<!-- Mobile Brand Header (Hidden on Desktop) -->
+<div class="flex items-center gap-2 text-primary mb-10 lg:hidden">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+<span class="font-headline font-bold text-xl tracking-tight text-on-surface">学启航</span>
+</div>
+<!-- Form Header -->
+<div class="mb-10">
+<h1 class="font-headline text-3xl font-bold text-on-surface tracking-tight mb-2">创建访问凭证</h1>
+<p class="font-body text-on-surface-variant text-sm">初始化您的研究环境参数</p>
+</div>
+<form class="space-y-6">
+<!-- Field: Username -->
+<div class="space-y-1">
+<label class="block font-label text-xs font-medium text-on-surface uppercase tracking-wider" for="username">
+                        系统标识名 (用户名)
+                    </label>
+<div class="relative">
+<!-- Input styling: No 4-sided boxes, bg shift, bottom border on focus -->
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:bg-surface-container-low text-on-surface font-body px-4 py-3 outline-none transition-colors duration-200" id="username" name="username" placeholder="e.g. researcher_01" required="" type="text"/>
+</div>
+</div>
+<!-- Field: Email -->
+<div class="space-y-1">
+<label class="block font-label text-xs font-medium text-on-surface uppercase tracking-wider" for="email">
+                        通信地址 (邮箱)
+                    </label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:bg-surface-container-low text-on-surface font-body px-4 py-3 outline-none transition-colors duration-200" id="email" name="email" placeholder="name@university.edu" required="" type="email"/>
+</div>
+</div>
+<!-- Field: Password -->
+<div class="space-y-1">
+<label class="block font-label text-xs font-medium text-on-surface uppercase tracking-wider" for="password">
+                        访问密钥 (密码)
+                    </label>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-transparent focus:border-primary focus:bg-surface-container-low text-on-surface font-body px-4 py-3 outline-none transition-colors duration-200" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- Terms Checkbox -->
+<div class="flex items-start pt-2">
+<div class="flex items-center h-5">
+<!-- Custom styled checkbox avoiding generic default -->
+<input class="w-4 h-4 rounded-sm border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface-container-lowest bg-surface-container-high cursor-pointer transition-colors" id="terms" name="terms" required="" type="checkbox"/>
+</div>
+<div class="ml-3 text-sm">
+<label class="font-body text-on-surface-variant cursor-pointer" for="terms">
+                            我已阅读并同意 
+                            <a class="text-primary hover:text-primary-dim hover:underline transition-colors" href="#">系统服务协议</a> 
+                            与 
+                            <a class="text-primary hover:text-primary-dim hover:underline transition-colors" href="#">数据处理声明</a>
+</label>
+</div>
+</div>
+<!-- Submit Action -->
+<div class="pt-6">
+<button class="w-full flex justify-center items-center gap-2 bg-primary text-on-primary py-3.5 px-4 rounded-lg font-label font-medium hover:bg-primary-dim focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container-lowest transition-all duration-200 group" type="submit">
+<span>初始化工作台</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Navigation Away -->
+<div class="mt-10 pt-6 border-t border-outline-variant/20 text-center">
+<p class="font-body text-sm text-on-surface-variant">
+                    已有认证凭证？ 
+                    <a class="font-medium text-primary hover:text-primary-dim transition-colors ml-1" href="#">进入登录端</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>

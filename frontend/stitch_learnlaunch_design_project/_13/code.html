@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Academic Architect - 学习状态分析</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eaeff2",
+                        "on-primary-fixed-variant": "#003671",
+                        "surface-container-low": "#f0f4f7",
+                        "error": "#a83836",
+                        "surface-container-high": "#e3e9ed",
+                        "on-surface": "#2c3437",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#675882",
+                        "tertiary-container": "#dfccfd",
+                        "surface-tint": "#2c5ea7",
+                        "primary-container": "#81aefd",
+                        "tertiary-fixed": "#dfccfd",
+                        "surface-container-highest": "#dce4e8",
+                        "inverse-surface": "#0b0f10",
+                        "outline-variant": "#acb3b7",
+                        "on-secondary-fixed-variant": "#535c6e",
+                        "on-secondary": "#f8f8ff",
+                        "on-tertiary-fixed": "#3d2f56",
+                        "tertiary-fixed-dim": "#d1beee",
+                        "on-tertiary": "#fef7ff",
+                        "on-primary-fixed": "#001431",
+                        "tertiary-dim": "#5b4c75",
+                        "secondary-container": "#dae2f9",
+                        "error-container": "#fa746f",
+                        "primary-fixed": "#81aefd",
+                        "on-primary": "#f8f8ff",
+                        "surface": "#f8f9fb",
+                        "secondary-fixed-dim": "#ccd4ea",
+                        "primary-dim": "#1b529b",
+                        "inverse-on-surface": "#9a9d9f",
+                        "background": "#f8f9fb",
+                        "on-background": "#2c3437",
+                        "primary-fixed-dim": "#73a1ef",
+                        "on-tertiary-container": "#50426a",
+                        "surface-dim": "#d4dbdf",
+                        "secondary-fixed": "#dae2f9",
+                        "on-tertiary-fixed-variant": "#5a4b74",
+                        "error-dim": "#67040d",
+                        "outline": "#747c80",
+                        "on-secondary-container": "#495264",
+                        "on-error-container": "#6e0a12",
+                        "secondary-dim": "#4a5365",
+                        "secondary": "#565f72",
+                        "primary": "#2c5ea7",
+                        "surface-bright": "#f8f9fb",
+                        "inverse-primary": "#81aefd",
+                        "on-surface-variant": "#596064",
+                        "on-error": "#fff7f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f5f7f9] border-b border-[#2c3437]/10 flex justify-between items-center px-6 py-3 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-[#2c5ea7]">Academic Architect</span>
+<nav class="hidden md:flex gap-6">
+<a class="text-[#2c3437]/70 hover:text-[#2c5ea7] transition-colors duration-200 font-body" href="#">Classroom</a>
+<a class="text-[#2c5ea7] font-bold border-b-2 border-[#2c5ea7] pb-1 font-body" href="#">Analytics</a>
+<a class="text-[#2c3437]/70 hover:text-[#2c5ea7] transition-colors duration-200 font-body" href="#">Execution Log</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">settings</span>
+<img class="w-8 h-8 rounded-full bg-surface-container-highest" data-alt="close-up portrait of a serious young student wearing glasses in a brightly lit library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeDANLC-ouE-FW2yGbx5V7tSoQUEZM0cyCJWt05QhaBIsbNjcrlymf7zBxBmFUqA4k1oS69clWi5iUNMs-CMPhp5bUrmHU13PrVXjaKj8Tm8RYGO2E2tG518NwAOxNJrvG2ULyOO2VJ0Jz_deCJz_SVp0G4OjiIzGipKd4q-6D6y7azQu4gBBXXEX0dJrcb8vhdnMEuJwngHBLVhxcgUh_Y-irOVKpErEVnMVgf8MdYjNNb8Q_WbbfSWadUqF9w4fNHQnLeHqhztqi"/>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 z-40 bg-[#f5f7f9] border-r border-[#2c3437]/10 flex flex-col p-4 pt-20 gap-2">
+<div class="mb-8 px-2">
+<h2 class="font-headline font-bold text-[#2c3437] text-lg">Workbench</h2>
+<p class="text-xs text-on-surface-variant opacity-60">AI Lab v1.2</p>
+</div>
+<div class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all rounded-sm" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="text-sm tracking-wide">Current Session</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all rounded-sm" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="text-sm tracking-wide">Knowledge Base</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-white text-[#2c5ea7] font-medium rounded-sm" href="#">
+<span class="material-symbols-outlined" data-icon="analytics" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="text-sm tracking-wide">Progress</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all rounded-sm" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="text-sm tracking-wide">Activity Log</span>
+</a>
+</div>
+<div class="mt-auto space-y-4">
+<a class="flex items-center gap-3 px-3 py-2 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all rounded-sm" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="text-sm tracking-wide">Help Center</span>
+</a>
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                End Session
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-20 p-8 min-h-screen">
+<div class="max-w-6xl mx-auto">
+<!-- Header Section -->
+<div class="mb-10 flex justify-between items-end">
+<div>
+<h1 class="text-4xl font-bold text-on-surface tracking-tight mb-2">学习状态分析</h1>
+<p class="text-on-surface-variant font-body">基于实时算法的学术表现评估报告 • 更新于 10:45 AM</p>
+</div>
+<div class="flex gap-2">
+<div class="px-3 py-1 bg-surface-container-highest text-on-surface text-xs font-medium rounded-lg">过去 7 天</div>
+<div class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-xs font-medium rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span> 导出 PDF
+                    </div>
+</div>
+</div>
+<!-- Bento Grid - Key Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+<!-- LSS Metric -->
+<div class="bg-surface-container-lowest p-6 border-l-4 border-primary">
+<p class="text-xs font-bold text-primary mb-1">LSS (Learning Power)</p>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">88.4</h3>
+<div class="w-full bg-surface-container-highest h-[2px] mb-2">
+<div class="bg-primary h-full" style="width: 88%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">学习效能指数</p>
+</div>
+<!-- KTL Metric -->
+<div class="bg-surface-container-lowest p-6 border-l-4 border-tertiary">
+<p class="text-xs font-bold text-tertiary mb-1">KTL (Knowledge Amount)</p>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">1,420</h3>
+<div class="w-full bg-surface-container-highest h-[2px] mb-2">
+<div class="bg-tertiary h-full" style="width: 65%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">知识总量统计</p>
+</div>
+<!-- LF Metric -->
+<div class="bg-surface-container-lowest p-6 border-l-4 border-[#2ecc71]">
+<p class="text-xs font-bold text-[#2ecc71] mb-1">LF (Focus)</p>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">92%</h3>
+<div class="w-full bg-surface-container-highest h-[2px] mb-2">
+<div class="bg-[#2ecc71] h-full" style="width: 92%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">专注力维持率</p>
+</div>
+<!-- LSB Metric -->
+<div class="bg-surface-container-lowest p-6 border-l-4 border-secondary">
+<p class="text-xs font-bold text-secondary mb-1">LSB (Stability)</p>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">稳定的</h3>
+<div class="w-full bg-surface-container-highest h-[2px] mb-2">
+<div class="bg-secondary h-full" style="width: 78%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">状态稳定性系数</p>
+</div>
+</div>
+<!-- Detailed Analysis Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- 7-Day Trend (Asymmetric layout) -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-8 relative overflow-hidden">
+<div class="flex justify-between items-center mb-12">
+<h4 class="text-lg font-bold font-headline">7日进阶趋势分析</h4>
+<div class="flex gap-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-primary"></div>
+<span class="text-xs text-on-surface-variant">LSS 趋势</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-tertiary"></div>
+<span class="text-xs text-on-surface-variant">目标基准线</span>
+</div>
+</div>
+</div>
+<!-- Custom Visual Chart (SVG Based for precision) -->
+<div class="h-64 w-full relative">
+<svg class="w-full h-full overflow-visible" viewbox="0 0 1000 200">
+<!-- Grid lines -->
+<line class="text-outline-variant/10" stroke="currentColor" stroke-width="1" x1="0" x2="1000" y1="0" y2="0"></line>
+<line class="text-outline-variant/10" stroke="currentColor" stroke-width="1" x1="0" x2="1000" y1="50" y2="50"></line>
+<line class="text-outline-variant/10" stroke="currentColor" stroke-width="1" x1="0" x2="1000" y1="100" y2="100"></line>
+<line class="text-outline-variant/10" stroke="currentColor" stroke-width="1" x1="0" x2="1000" y1="150" y2="150"></line>
+<line class="text-outline-variant/10" stroke="currentColor" stroke-width="1" x1="0" x2="1000" y1="200" y2="200"></line>
+<!-- Trend Line -->
+<path d="M0,150 L166,120 L333,140 L500,80 L666,60 L833,90 L1000,40" fill="none" stroke="#2c5ea7" stroke-linecap="round" stroke-width="3"></path>
+<path d="M0,150 L166,120 L333,140 L500,80 L666,60 L833,90 L1000,40 V200 H0 Z" fill="url(#gradient)" opacity="0.1"></path>
+<!-- Points -->
+<circle cx="0" cy="150" fill="#2c5ea7" r="4"></circle>
+<circle cx="166" cy="120" fill="#2c5ea7" r="4"></circle>
+<circle cx="333" cy="140" fill="#2c5ea7" r="4"></circle>
+<circle cx="500" cy="80" fill="#2c5ea7" r="4"></circle>
+<circle cx="666" cy="60" fill="#2c5ea7" r="4"></circle>
+<circle cx="833" cy="90" fill="#2c5ea7" r="4"></circle>
+<circle cx="1000" cy="40" fill="#2c5ea7" r="4"></circle>
+<defs>
+<lineargradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#2c5ea7"></stop>
+<stop offset="100%" stop-color="transparent"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- X-Axis Labels -->
+<div class="flex justify-between mt-4 text-[10px] text-on-surface-variant font-bold tracking-widest uppercase">
+<span>周一</span>
+<span>周二</span>
+<span>周三</span>
+<span>周四</span>
+<span>周五</span>
+<span>周六</span>
+<span>周日</span>
+</div>
+</div>
+</div>
+<!-- AI Suggestions (Cognitive Workbench) -->
+<div class="bg-surface-container-low p-8 border-l-2 border-primary relative">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary">psychology</span>
+<h4 class="text-lg font-bold font-headline">AI 优化建议</h4>
+</div>
+<div class="space-y-6 relative">
+<!-- Connecting vertical line -->
+<div class="absolute left-[7px] top-4 bottom-0 w-[1px] bg-outline-variant/30"></div>
+<!-- Suggestion 1 -->
+<div class="relative pl-6">
+<div class="absolute left-0 top-[6px] w-[15px] h-[15px] rounded-full bg-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+</div>
+<p class="text-xs text-on-surface-variant font-bold mb-1">结构化间隔</p>
+<p class="text-sm leading-relaxed text-on-surface">您的 LF (专注力) 在持续 75 分钟后开始显著下滑。建议实施 <strong class="text-primary">50/10 循环</strong> 方案以维持峰值效能。</p>
+</div>
+<!-- Suggestion 2 -->
+<div class="relative pl-6">
+<div class="absolute left-0 top-[6px] w-[15px] h-[15px] rounded-full bg-outline-variant flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+</div>
+<p class="text-xs text-on-surface-variant font-bold mb-1">知识整合</p>
+<p class="text-sm leading-relaxed text-on-surface">KTL 指数增长迅速，但 LSB (稳定性) 略有波动。建议今日重点进行 <strong class="text-primary">费曼技巧</strong> 练习，回顾周三的主题。</p>
+</div>
+<!-- Suggestion 3 -->
+<div class="relative pl-6">
+<div class="absolute left-0 top-[6px] w-[15px] h-[15px] rounded-full bg-outline-variant flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+</div>
+<p class="text-xs text-on-surface-variant font-bold mb-1">环境优化</p>
+<p class="text-sm leading-relaxed text-on-surface">数据显示晚间学习效率比早间高出 12%。考虑将 <strong class="text-primary">深度思考类任务</strong> 迁移至 19:00 - 21:00 时段。</p>
+</div>
+</div>
+<div class="mt-10 p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/10">
+<button class="w-full flex items-center justify-between text-xs font-bold text-primary group">
+                            生成详细学习路线图
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Section - Progress Overview -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/10">
+<h5 class="text-sm font-bold mb-6 text-on-surface-variant">核心技能掌握图谱</h5>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="font-medium text-on-surface">批判性思维</span>
+<span class="text-primary font-bold">94%</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: 94%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="font-medium text-on-surface">信息检索能力</span>
+<span class="text-primary font-bold">76%</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: 76%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="font-medium text-on-surface">量化分析</span>
+<span class="text-primary font-bold">62%</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: 62%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-white/50 text-4xl mb-4">verified_user</span>
+<h5 class="text-white text-xl font-headline font-bold mb-2">学业达成度展望</h5>
+<p class="text-white/80 text-sm leading-relaxed">基于当前 LSS 与 KTL 轨迹，预计您将在 14 天内提前完成《进阶宏观经济学》模块的学习目标。</p>
+</div>
+<div class="mt-6 flex items-center gap-4">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full border-2 border-primary bg-surface-container" data-alt="portrait of a professional female academic mentor in a home office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh5hYeudUEeBD0R3E2Q0cIopXiyTxOm2JSYFyDTDUo8ZzzFU8U38_ueaRs0XroxAKex9iNx1N7YRoA3nVWh0ZmsBoBytLp2JYPAkyOeTHGLLXfopt8Yp8zmv80N0l5LE9U-kj6yKvPa-fDV9pzoUCTPqjk4Bg1J_UUFJo9xAEWgdhYc6jooRl8Tke9nWcYTlATKo3xccXskmb3kNzPpxPGztfAZiQi96aWH9ZeYKLG1j4wjdCNLmt6GuJ7KHIFHjXXbV0OABuVzbld"/>
+<img class="w-8 h-8 rounded-full border-2 border-primary bg-surface-container" data-alt="portrait of a male researcher in his 30s with a clean professional look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA493jJ7ZvRZltjGyzQ_HQOCR6pFWHmel7hoU1QNkojqDghdgrAtkAFvktUA2ymiwDXxESsd6GhcIgPzMKZtkexK5SkQ6uEQqQDG7WSUN2nm4t9i4WtJ5FycbOlE0Pp4IomvgAYyX6ktc5SR9hhT2dVnGTLzE_WScbwudkZp7PO8cPWCb5wJd936APO0F8fRsd2TGf-5Z3Y8NUEwp6nTPXp6mIRecdUC6i_qjX3ARVOZV60RK3_2iMSUg811iM1bFRKQ0DoekV7a72t"/>
+</div>
+<span class="text-white/60 text-[10px] font-bold uppercase tracking-widest">已有 12 位导师关注您的进度</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

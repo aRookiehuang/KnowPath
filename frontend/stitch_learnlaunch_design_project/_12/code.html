@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Execution Log - Academic Architect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eaeff2",
+                        "on-primary-fixed-variant": "#003671",
+                        "surface-container-low": "#f0f4f7",
+                        "error": "#a83836",
+                        "surface-container-high": "#e3e9ed",
+                        "on-surface": "#2c3437",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#675882",
+                        "tertiary-container": "#dfccfd",
+                        "surface-tint": "#2c5ea7",
+                        "primary-container": "#81aefd",
+                        "tertiary-fixed": "#dfccfd",
+                        "surface-container-highest": "#dce4e8",
+                        "inverse-surface": "#0b0f10",
+                        "outline-variant": "#acb3b7",
+                        "on-secondary-fixed-variant": "#535c6e",
+                        "on-secondary": "#f8f8ff",
+                        "on-tertiary-fixed": "#3d2f56",
+                        "tertiary-fixed-dim": "#d1beee",
+                        "on-tertiary": "#fef7ff",
+                        "on-primary-fixed": "#001431",
+                        "tertiary-dim": "#5b4c75",
+                        "secondary-container": "#dae2f9",
+                        "error-container": "#fa746f",
+                        "primary-fixed": "#81aefd",
+                        "on-primary": "#f8f8ff",
+                        "surface": "#f8f9fb",
+                        "secondary-fixed-dim": "#ccd4ea",
+                        "primary-dim": "#1b529b",
+                        "inverse-on-surface": "#9a9d9f",
+                        "background": "#f8f9fb",
+                        "on-background": "#2c3437",
+                        "primary-fixed-dim": "#73a1ef",
+                        "on-tertiary-container": "#50426a",
+                        "surface-dim": "#d4dbdf",
+                        "secondary-fixed": "#dae2f9",
+                        "on-tertiary-fixed-variant": "#5a4b74",
+                        "error-dim": "#67040d",
+                        "outline": "#747c80",
+                        "on-secondary-container": "#495264",
+                        "on-error-container": "#6e0a12",
+                        "secondary-dim": "#4a5365",
+                        "secondary": "#565f72",
+                        "primary": "#2c5ea7",
+                        "surface-bright": "#f8f9fb",
+                        "inverse-primary": "#81aefd",
+                        "on-surface-variant": "#596064",
+                        "on-error": "#fff7f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fb;
+        }
+        .header-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2c5ea733;
+        }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f5f7f9] border-b border-[#2c3437]/10">
+<div class="flex justify-between items-center px-6 py-3 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-[#2c5ea7] header-font">Academic Architect</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-[#2c3437]/70 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Classroom</a>
+<a class="text-[#2c3437]/70 hover:text-[#2c5ea7] transition-colors duration-200 text-sm font-medium" href="#">Analytics</a>
+<a class="text-[#2c5ea7] font-bold border-b-2 border-[#2c5ea7] pb-1 text-sm" href="#">Execution Log</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all active:opacity-80 active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all active:opacity-80 active:scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<img alt="Student avatar" class="w-8 h-8 rounded-full border border-outline-variant/30" data-alt="portrait of a professional student with glasses in a minimalist bright studio setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUYazKzOlCNXCGaj6PPVAlFqEpDfr5T7VktHOz4yFAUAZ70U76cuRCUPy7UeyLLEltnKcRbA8vltf6MMoGam8gf0QH-IoKSlkjjbDbs38pL8UdSKPAO1lgxLJXDRJS4t6CAMjyPcFrhNtBOwm6aQvmW4ZP-Tozn3t1wQzBtBxEqfVgZoFwCNNzrNU-utPCJBmmSnOHTzhilsPWHbPyQimGzQkKvNj0alFAvyVZUjzieDOvqstAKxt1mU8r612BRTNQAMFpDpFmh6-z"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full w-64 z-40 bg-[#f5f7f9] border-r border-[#2c3437]/10 flex flex-col p-4 pt-20 gap-2">
+<div class="px-4 mb-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">architecture</span>
+</div>
+<div>
+<p class="header-font font-bold text-[#2c3437] text-sm leading-tight">Workbench</p>
+<p class="text-[10px] text-on-surface-variant/60 uppercase tracking-widest font-medium">AI Lab v1.2</p>
+</div>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all ease-in-out duration-150 rounded-sm" href="#">
+<span class="material-symbols-outlined text-xl">school</span>
+<span class="font-['Inter'] text-sm tracking-wide">Current Session</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all ease-in-out duration-150 rounded-sm" href="#">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+<span class="font-['Inter'] text-sm tracking-wide">Knowledge Base</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all ease-in-out duration-150 rounded-sm" href="#">
+<span class="material-symbols-outlined text-xl">analytics</span>
+<span class="font-['Inter'] text-sm tracking-wide">Progress</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 bg-white text-[#2c5ea7] font-medium rounded-sm" href="#">
+<span class="material-symbols-outlined text-xl">history</span>
+<span class="font-['Inter'] text-sm tracking-wide">Activity Log</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 space-y-4">
+<a class="flex items-center gap-3 px-4 py-2 text-[#2c3437]/60 hover:bg-[#2c5ea7]/5 transition-all rounded-sm" href="#">
+<span class="material-symbols-outlined text-xl">help_outline</span>
+<span class="font-['Inter'] text-sm tracking-wide">Help Center</span>
+</a>
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg text-sm font-medium active:opacity-80 active:scale-95 transition-all">
+                End Session
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-20 p-8 min-h-screen">
+<div class="max-w-6xl mx-auto">
+<!-- Page Header -->
+<header class="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h1 class="header-font text-3xl font-bold text-on-surface tracking-tight mb-2">执行日志</h1>
+<p class="text-on-surface-variant font-body">监控您的学术工作流程和 AI 交互记录。</p>
+</div>
+<div class="flex gap-3">
+<button class="px-4 py-2 bg-surface-container-lowest border border-outline-variant/20 rounded-lg text-sm font-medium flex items-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+                        导出 CSV
+                    </button>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg text-sm font-medium flex items-center gap-2 active:opacity-80 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg">refresh</span>
+                        刷新日志
+                    </button>
+</div>
+</header>
+<!-- Filters Area -->
+<div class="bg-surface-container-low p-4 mb-6 rounded-lg grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/70">时间范围</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-lg text-sm focus:ring-2 focus:ring-primary h-10 px-3">
+<option>最近 24 小时</option>
+<option>最近 7 天</option>
+<option>最近 30 天</option>
+<option>自定义范围...</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/70">活动类型</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-lg text-sm focus:ring-2 focus:ring-primary h-10 px-3">
+<option>所有活动</option>
+<option>AI 会话</option>
+<option>视频学习</option>
+<option>文档批注</option>
+<option>测验完成</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/70">状态</label>
+<div class="flex gap-2">
+<button class="flex-1 h-10 bg-surface-container-lowest border-b-2 border-primary text-primary text-sm font-medium flex items-center justify-center">全部</button>
+<button class="flex-1 h-10 bg-surface-container-lowest text-on-surface-variant/70 text-sm font-medium flex items-center justify-center hover:bg-white transition-colors">成功</button>
+<button class="flex-1 h-10 bg-surface-container-lowest text-on-surface-variant/70 text-sm font-medium flex items-center justify-center hover:bg-white transition-colors">警告</button>
+</div>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant/50 text-xl">search</span>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg text-sm focus:ring-2 focus:ring-primary h-10 pl-10 pr-3" placeholder="搜索任务名称..." type="text"/>
+</div>
+</div>
+<!-- Table Container -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/10">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/10 bg-surface-container-low/30">
+<th class="px-6 py-4 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/70">执行时间</th>
+<th class="px-6 py-4 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/70">任务名称</th>
+<th class="px-6 py-4 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/70">执行动作</th>
+<th class="px-6 py-4 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/70">状态</th>
+<th class="px-6 py-4 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/70 text-right">操作</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/5">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/20 transition-colors group">
+<td class="px-6 py-4">
+<p class="text-sm font-medium text-on-surface">2023-11-24</p>
+<p class="text-xs text-on-surface-variant/60">14:22:15</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">science</span>
+</div>
+<span class="text-sm font-semibold">量子力学基础研究</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase tracking-wider">AI 会话结束</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-medium text-on-surface-variant">成功</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="text-primary text-sm font-bold hover:underline underline-offset-4 flex items-center justify-end gap-1" href="#">
+                                    查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/20 transition-colors group">
+<td class="px-6 py-4">
+<p class="text-sm font-medium text-on-surface">2023-11-24</p>
+<p class="text-xs text-on-surface-variant/60">13:05:42</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</div>
+<span class="text-sm font-semibold">线性代数：矩阵变换</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded uppercase tracking-wider">视频观看完成</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-medium text-on-surface-variant">成功</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="text-primary text-sm font-bold hover:underline underline-offset-4 flex items-center justify-end gap-1" href="#">
+                                    查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 3 (Warning State) -->
+<tr class="hover:bg-surface-container-low/20 transition-colors group">
+<td class="px-6 py-4">
+<p class="text-sm font-medium text-on-surface">2023-11-24</p>
+<p class="text-xs text-on-surface-variant/60">11:40:02</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-lg">description</span>
+</div>
+<span class="text-sm font-semibold">宏观经济学期中回顾</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded uppercase tracking-wider">文档导出失败</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="text-xs font-medium text-on-surface-variant">警告</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="text-primary text-sm font-bold hover:underline underline-offset-4 flex items-center justify-end gap-1" href="#">
+                                    重试操作 <span class="material-symbols-outlined text-sm">sync</span>
+</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/20 transition-colors group">
+<td class="px-6 py-4">
+<p class="text-sm font-medium text-on-surface">2023-11-24</p>
+<p class="text-xs text-on-surface-variant/60">10:15:20</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</div>
+<span class="text-sm font-semibold">认知心理学模型分析</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded uppercase tracking-wider">测验提交</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-medium text-on-surface-variant">成功</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="text-primary text-sm font-bold hover:underline underline-offset-4 flex items-center justify-end gap-1" href="#">
+                                    查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/20 transition-colors group">
+<td class="px-6 py-4">
+<p class="text-sm font-medium text-on-surface">2023-11-23</p>
+<p class="text-xs text-on-surface-variant/60">22:50:11</p>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">auto_stories</span>
+</div>
+<span class="text-sm font-semibold">古典哲学深度阅读</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded uppercase tracking-wider">知识库更新</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-medium text-on-surface-variant">成功</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="text-primary text-sm font-bold hover:underline underline-offset-4 flex items-center justify-end gap-1" href="#">
+                                    查看详情 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="px-6 py-4 bg-surface-container-low/30 border-t border-outline-variant/10 flex items-center justify-between">
+<p class="text-xs text-on-surface-variant font-medium">显示 5 条记录，共 124 条</p>
+<div class="flex gap-2">
+<button class="w-8 h-8 flex items-center justify-center border border-outline-variant/20 rounded hover:bg-white transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded text-xs font-bold">1</button>
+<button class="w-8 h-8 flex items-center justify-center border border-outline-variant/20 rounded hover:bg-white transition-colors text-xs font-bold text-on-surface-variant">2</button>
+<button class="w-8 h-8 flex items-center justify-center border border-outline-variant/20 rounded hover:bg-white transition-colors text-xs font-bold text-on-surface-variant">3</button>
+<button class="w-8 h-8 flex items-center justify-center border border-outline-variant/20 rounded hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asymmetric Rationalism Section: Quick Insights -->
+<div class="mt-8 grid grid-cols-12 gap-6">
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
+<h3 class="header-font text-lg font-bold mb-4">执行效率趋势</h3>
+<div class="h-48 w-full bg-surface-container-low rounded flex items-end justify-between p-4 gap-2 relative overflow-hidden">
+<!-- Simulated Chart -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(44,94,167,0.02)_0%,transparent_100%)]"></div>
+<div class="w-full bg-primary/20 h-24 rounded-sm hover:bg-primary/40 transition-all cursor-pointer relative group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">82%</div>
+</div>
+<div class="w-full bg-primary/20 h-32 rounded-sm hover:bg-primary/40 transition-all cursor-pointer relative group"></div>
+<div class="w-full bg-primary/60 h-40 rounded-sm hover:bg-primary/80 transition-all cursor-pointer relative group"></div>
+<div class="w-full bg-primary/20 h-28 rounded-sm hover:bg-primary/40 transition-all cursor-pointer relative group"></div>
+<div class="w-full bg-primary/40 h-36 rounded-sm hover:bg-primary/60 transition-all cursor-pointer relative group"></div>
+<div class="w-full bg-primary/20 h-16 rounded-sm hover:bg-primary/40 transition-all cursor-pointer relative group"></div>
+<div class="w-full bg-primary/80 h-44 rounded-sm hover:bg-primary transition-all cursor-pointer relative group"></div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 bg-primary p-6 rounded-xl text-on-primary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">auto_awesome</span>
+<h3 class="header-font text-xl font-bold mb-2">AI 洞察报告</h3>
+<p class="text-sm opacity-80 leading-relaxed">您的执行效率在过去 24 小时内提升了 12%。主要得益于在“线性代数”模块中的高频互动。</p>
+</div>
+<button class="mt-6 w-full py-3 bg-white/10 hover:bg-white/20 transition-colors border border-white/20 rounded-lg text-sm font-bold">
+                        下载完整分析
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button (FAB) - Suppressed as per context (Details/Log page) -->
+</body></html>
