@@ -40,8 +40,9 @@ class AchievementService {
           }
         });
 
-if (!exists) {
+        if (!exists) {
           // 保存新成就
+          const unlockedAt = new Date();
           await prisma.achievements.create({
             data: {
               id: `ach_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`,
@@ -51,7 +52,8 @@ if (!exists) {
               description: achievement.description,
               iconUrl: achievement.icon,
               xpReward: achievement.xpReward,
-              earnedAt: new Date()
+              unlockedAt,
+              earnedAt: unlockedAt
             }
           });
 
@@ -106,7 +108,7 @@ if (!exists) {
         description: a.description ?? '',
         iconUrl: a.iconUrl,
         xpReward: a.xpReward ?? 0,
-        earnedAt: a.unlockedAt
+        earnedAt: a.earnedAt ?? a.unlockedAt
       }));
     } catch (error) {
       logger.error('获取用户成就失败:', error);
@@ -173,7 +175,7 @@ if (!exists) {
           type: achievement.type,
           unlocked,
           progress,
-          earnedAt: userAchievement?.earnedAt
+          earnedAt: userAchievement?.earnedAt ?? userAchievement?.unlockedAt
         };
       });
     } catch (error) {

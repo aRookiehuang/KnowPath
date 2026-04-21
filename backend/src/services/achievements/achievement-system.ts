@@ -281,14 +281,33 @@ export class AchievementSystem {
         total = requirement.value as number;
         break;
 
+      case 'path_completion':
+        current = stats.completedPaths || 0;
+        total = requirement.value as number;
+        break;
+
+      case 'custom':
+        if (requirement.value === 'all_paths_complete') {
+          current = stats.completedPaths || 0;
+          total = Math.max(stats.totalPaths || 0, 1);
+        } else if (requirement.value === 'perfect_week') {
+          current = Math.round((stats.weekCompletionRate || 0) * 100);
+          total = 100;
+        } else if (requirement.value === 'speed') {
+          current = Math.round(Math.min((stats.timeEfficiency || 0) * 100, 150));
+          total = 150;
+        }
+        break;
+
       default:
         current = 0;
         total = 1;
     }
 
-    const percentage = Math.min(100, Math.round((current / total) * 100));
+    const safeTotal = Math.max(total, 1);
+    const percentage = Math.min(100, Math.round((current / safeTotal) * 100));
 
-    return { current, total, percentage };
+    return { current, total: safeTotal, percentage };
   }
 }
 

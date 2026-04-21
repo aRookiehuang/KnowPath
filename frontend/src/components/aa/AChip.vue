@@ -9,7 +9,7 @@ withDefaults(defineProps<Props>(), { tone: 'neutral', size: 'md' });
 
 <template>
   <span class="aa-chip" :class="[`aa-chip--${tone}`, `aa-chip--${size}`]">
-    <span v-if="icon" class="material-symbols-outlined">{{ icon }}</span>
+    <span v-if="icon" class="material-symbols-outlined" aria-hidden="true">{{ icon }}</span>
     <slot />
   </span>
 </template>

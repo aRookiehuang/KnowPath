@@ -43,6 +43,12 @@ export const userAPI = {
     return response.data;
   },
 
+  // 获取全量成就总览（含未解锁状态）
+  async getAchievementOverview(): Promise<any> {
+    const response = await api.get('/achievements/all');
+    return response.data;
+  },
+
   // 获取学习会话
   async getSessions(limit?: number): Promise<any> {
     const response = await api.get('/users/me/sessions', {

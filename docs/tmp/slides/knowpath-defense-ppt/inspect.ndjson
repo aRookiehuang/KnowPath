@@ -1,0 +1,840 @@
+{"kind":"deck","id":"knowpath-defense-ppt","slideCount":16,"slideSize":{"width":1280,"height":720}}
+{"kind":"slide","slide":1,"id":"ixopmy"}
+{"kind":"slide","slide":2,"id":"4ob4bi"}
+{"kind":"slide","slide":3,"id":"rax4x3"}
+{"kind":"slide","slide":4,"id":"7pr1p8"}
+{"kind":"slide","slide":5,"id":"c5pj27"}
+{"kind":"slide","slide":6,"id":"pbtxjf"}
+{"kind":"slide","slide":7,"id":"3925k4"}
+{"kind":"slide","slide":8,"id":"0dlqmp"}
+{"kind":"slide","slide":9,"id":"aq0oga"}
+{"kind":"slide","slide":10,"id":"cv855m"}
+{"kind":"slide","slide":11,"id":"89e4mr"}
+{"kind":"slide","slide":12,"id":"ldjdbe"}
+{"kind":"slide","slide":13,"id":"1acyy9"}
+{"kind":"slide","slide":14,"id":"lhcfxr"}
+{"kind":"slide","slide":15,"id":"z6wjit"}
+{"kind":"slide","slide":16,"id":"57k3z5"}
+{"kind":"shape","slide":1,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":1,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":1,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":1,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":1,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":1,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":1,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":1,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":1,"role":"cover-tag","bbox":[56,118,170,32]}
+{"kind":"shape","slide":1,"role":"cover-tag-text","bbox":[70,126,140,16]}
+{"kind":"textbox","slide":1,"role":"cover-tag-text","text":"AI 学习工作台 · 项目答辩","textChars":15,"textLines":1,"bbox":[70,126,140,16]}
+{"kind":"shape","slide":1,"role":"cover-cn","bbox":[58,178,520,64]}
+{"kind":"textbox","slide":1,"role":"cover-cn","text":"知途（KnowPath）","textChars":12,"textLines":1,"bbox":[58,178,520,64]}
+{"kind":"shape","slide":1,"role":"cover-title","bbox":[58,246,650,60]}
+{"kind":"textbox","slide":1,"role":"cover-title","text":"面向复杂任务学习场景的 AI 学习工作台","textChars":20,"textLines":1,"bbox":[58,246,650,60]}
+{"kind":"shape","slide":1,"role":"cover-sub","bbox":[60,322,590,70]}
+{"kind":"textbox","slide":1,"role":"cover-sub","text":"聚焦“目标澄清 → 路径规划 → 学习推进 → 状态反馈”，帮助学习者把模糊目标转化为可执行路径。","textChars":49,"textLines":1,"bbox":[60,322,590,70]}
+{"kind":"shape","slide":1,"role":"card","bbox":[58,420,202,120]}
+{"kind":"shape","slide":1,"role":"card-mark","bbox":[76,438,52,8]}
+{"kind":"shape","slide":1,"role":"card-title","bbox":[76,454,166,28]}
+{"kind":"textbox","slide":1,"role":"card-title","text":"赛道定位","textChars":4,"textLines":1,"bbox":[76,454,166,28]}
+{"kind":"shape","slide":1,"role":"card-body","bbox":[76,492,166,26]}
+{"kind":"textbox","slide":1,"role":"card-body","text":"大学生计算机设计大赛\n人工智能应用——实践赛道","textChars":23,"textLines":2,"bbox":[76,492,166,26]}
+{"kind":"shape","slide":1,"role":"card","bbox":[278,420,202,120]}
+{"kind":"shape","slide":1,"role":"card-mark","bbox":[296,438,52,8]}
+{"kind":"shape","slide":1,"role":"card-title","bbox":[296,454,166,28]}
+{"kind":"textbox","slide":1,"role":"card-title","text":"项目价值","textChars":4,"textLines":1,"bbox":[296,454,166,28]}
+{"kind":"shape","slide":1,"role":"card-body","bbox":[296,492,166,26]}
+{"kind":"textbox","slide":1,"role":"card-body","text":"让 AI 不只回答问题，\n更持续组织学习过程","textChars":22,"textLines":2,"bbox":[296,492,166,26]}
+{"kind":"shape","slide":1,"role":"card","bbox":[498,420,202,120]}
+{"kind":"shape","slide":1,"role":"card-mark","bbox":[516,438,52,8]}
+{"kind":"shape","slide":1,"role":"card-title","bbox":[516,454,166,28]}
+{"kind":"textbox","slide":1,"role":"card-title","text":"在线演示","textChars":4,"textLines":1,"bbox":[516,454,166,28]}
+{"kind":"shape","slide":1,"role":"card-body","bbox":[516,492,166,26]}
+{"kind":"textbox","slide":1,"role":"card-body","text":"部署地址：47.122.53.1\n支持主链路访问与展示","textChars":27,"textLines":2,"bbox":[516,492,166,26]}
+{"kind":"shape","slide":1,"role":"cover-ui-frame","bbox":[760,132,454,434]}
+{"kind":"image","slide":1,"role":"cover-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\首页.png","bbox":[760,132,454,434]}
+{"kind":"shape","slide":1,"role":"cover-meta","bbox":[60,618,420,24]}
+{"kind":"textbox","slide":1,"role":"cover-meta","text":"团队：XXX    成员：XXX    指导教师：XXX","textChars":28,"textLines":1,"bbox":[60,618,420,24]}
+{"kind":"shape","slide":1,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":1,"role":"footer-page","text":"1 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":2,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":2,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":2,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":2,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":2,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":2,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":2,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":2,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":2,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":2,"role":"title","text":"02  项目背景与问题提出","textChars":13,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":2,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":2,"role":"subtitle","text":"复杂任务学习中，大学生真正缺的不是信息，而是可持续推进的路径。","textChars":31,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":2,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":2,"role":"card","bbox":[56,208,278,180]}
+{"kind":"shape","slide":2,"role":"card-mark","bbox":[74,226,52,8]}
+{"kind":"shape","slide":2,"role":"card-title","bbox":[74,242,242,28]}
+{"kind":"textbox","slide":2,"role":"card-title","text":"痛点一：不知道从哪开始","textChars":11,"textLines":1,"bbox":[74,242,242,28]}
+{"kind":"shape","slide":2,"role":"card-body","bbox":[74,280,242,86]}
+{"kind":"textbox","slide":2,"role":"card-body","text":"用户往往知道“要完成一个项目”，却无法把目标拆解成阶段任务。","textChars":30,"textLines":1,"bbox":[74,280,242,86]}
+{"kind":"shape","slide":2,"role":"card-tag-bg","bbox":[222,226,92,26]}
+{"kind":"shape","slide":2,"role":"card-tag","bbox":[228,231,80,16]}
+{"kind":"textbox","slide":2,"role":"card-tag","text":"目标模糊","textChars":4,"textLines":1,"bbox":[228,231,80,16]}
+{"kind":"shape","slide":2,"role":"card","bbox":[354,208,278,180]}
+{"kind":"shape","slide":2,"role":"card-mark","bbox":[372,226,52,8]}
+{"kind":"shape","slide":2,"role":"card-title","bbox":[372,242,242,28]}
+{"kind":"textbox","slide":2,"role":"card-title","text":"痛点二：资料很多但路径缺失","textChars":13,"textLines":1,"bbox":[372,242,242,28]}
+{"kind":"shape","slide":2,"role":"card-body","bbox":[372,280,242,86]}
+{"kind":"textbox","slide":2,"role":"card-body","text":"搜索、看教程、问 AI 都能得到信息，但难以沉淀为连续可执行的学习路线。","textChars":36,"textLines":1,"bbox":[372,280,242,86]}
+{"kind":"shape","slide":2,"role":"card-tag-bg","bbox":[520,226,92,26]}
+{"kind":"shape","slide":2,"role":"card-tag","bbox":[526,231,80,16]}
+{"kind":"textbox","slide":2,"role":"card-tag","text":"路径缺失","textChars":4,"textLines":1,"bbox":[526,231,80,16]}
+{"kind":"shape","slide":2,"role":"card","bbox":[652,208,278,180]}
+{"kind":"shape","slide":2,"role":"card-mark","bbox":[670,226,52,8]}
+{"kind":"shape","slide":2,"role":"card-title","bbox":[670,242,242,28]}
+{"kind":"textbox","slide":2,"role":"card-title","text":"痛点三：通用 AI 难以持续陪练","textChars":16,"textLines":1,"bbox":[670,242,242,28]}
+{"kind":"shape","slide":2,"role":"card-body","bbox":[670,280,242,86]}
+{"kind":"textbox","slide":2,"role":"card-body","text":"传统一问一答式 AI 擅长给出回答，却不擅长持续追问、纠偏和推进。","textChars":33,"textLines":1,"bbox":[670,280,242,86]}
+{"kind":"shape","slide":2,"role":"card-tag-bg","bbox":[818,226,92,26]}
+{"kind":"shape","slide":2,"role":"card-tag","bbox":[824,231,80,16]}
+{"kind":"textbox","slide":2,"role":"card-tag","text":"过程断裂","textChars":4,"textLines":1,"bbox":[824,231,80,16]}
+{"kind":"shape","slide":2,"role":"card","bbox":[950,208,278,180]}
+{"kind":"shape","slide":2,"role":"card-mark","bbox":[968,226,52,8]}
+{"kind":"shape","slide":2,"role":"card-title","bbox":[968,242,242,28]}
+{"kind":"textbox","slide":2,"role":"card-title","text":"痛点四：缺少过程反馈","textChars":10,"textLines":1,"bbox":[968,242,242,28]}
+{"kind":"shape","slide":2,"role":"card-body","bbox":[968,280,242,86]}
+{"kind":"textbox","slide":2,"role":"card-body","text":"学习者很难判断当前状态、节奏、认知压力与下一步动作。","textChars":26,"textLines":1,"bbox":[968,280,242,86]}
+{"kind":"shape","slide":2,"role":"card-tag-bg","bbox":[1116,226,92,26]}
+{"kind":"shape","slide":2,"role":"card-tag","bbox":[1122,231,80,16]}
+{"kind":"textbox","slide":2,"role":"card-tag","text":"反馈不足","textChars":4,"textLines":1,"bbox":[1122,231,80,16]}
+{"kind":"shape","slide":2,"role":"summary-panel","bbox":[56,432,1172,188]}
+{"kind":"shape","slide":2,"role":"summary-title","bbox":[84,456,560,30]}
+{"kind":"textbox","slide":2,"role":"summary-title","text":"问题本质：现有工具更像“信息供给器”，而不是“学习推进器”","textChars":29,"textLines":1,"bbox":[84,456,560,30]}
+{"kind":"shape","slide":2,"role":"bullet","bbox":[84,510,14,14]}
+{"kind":"shape","slide":2,"role":"bullet-text","bbox":[108,504,516,34]}
+{"kind":"textbox","slide":2,"role":"bullet-text","text":"复杂任务学习需要先澄清目标，再规划路径。","textChars":20,"textLines":1,"bbox":[108,504,516,34]}
+{"kind":"shape","slide":2,"role":"bullet","bbox":[84,552,14,14]}
+{"kind":"shape","slide":2,"role":"bullet-text","bbox":[108,546,516,34]}
+{"kind":"textbox","slide":2,"role":"bullet-text","text":"需要围绕任务过程进行多轮互动，而不是一次性输出。","textChars":24,"textLines":1,"bbox":[108,546,516,34]}
+{"kind":"shape","slide":2,"role":"bullet","bbox":[84,594,14,14]}
+{"kind":"shape","slide":2,"role":"bullet-text","bbox":[108,588,516,34]}
+{"kind":"textbox","slide":2,"role":"bullet-text","text":"需要对学习状态进行观察与反馈，形成完整闭环。","textChars":22,"textLines":1,"bbox":[108,588,516,34]}
+{"kind":"shape","slide":2,"role":"pain-home-frame","bbox":[782,452,404,142]}
+{"kind":"image","slide":2,"role":"pain-home","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\首页.png","bbox":[782,452,404,142]}
+{"kind":"shape","slide":2,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":2,"role":"footer-page","text":"2 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":3,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":3,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":3,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":3,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":3,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":3,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":3,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":3,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":3,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":3,"role":"title","text":"03  项目定位","textChars":8,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":3,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":3,"role":"subtitle","text":"从聊天工具升级为面向复杂任务学习场景的 AI 学习工作台。","textChars":29,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":3,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":3,"role":"left-zone","bbox":[56,204,520,340]}
+{"kind":"shape","slide":3,"role":"what-title","bbox":[84,232,240,32]}
+{"kind":"textbox","slide":3,"role":"what-title","text":"知途是什么？","textChars":6,"textLines":1,"bbox":[84,232,240,32]}
+{"kind":"shape","slide":3,"role":"bullet","bbox":[84,288,14,14]}
+{"kind":"shape","slide":3,"role":"bullet-text","bbox":[108,282,406,34]}
+{"kind":"textbox","slide":3,"role":"bullet-text","text":"AI 学习平台 / 比赛作品 / 可扩展产品原型","textChars":24,"textLines":1,"bbox":[108,282,406,34]}
+{"kind":"shape","slide":3,"role":"bullet","bbox":[84,340,14,14]}
+{"kind":"shape","slide":3,"role":"bullet-text","bbox":[108,334,406,34]}
+{"kind":"textbox","slide":3,"role":"bullet-text","text":"面向大学生、竞赛参与者、项目制学习者、自主学习者","textChars":24,"textLines":1,"bbox":[108,334,406,34]}
+{"kind":"shape","slide":3,"role":"bullet","bbox":[84,392,14,14]}
+{"kind":"shape","slide":3,"role":"bullet-text","bbox":[108,386,406,34]}
+{"kind":"textbox","slide":3,"role":"bullet-text","text":"核心目标：从模糊目标出发，形成清晰路径并持续推进","textChars":24,"textLines":1,"bbox":[108,386,406,34]}
+{"kind":"shape","slide":3,"role":"bullet","bbox":[84,444,14,14]}
+{"kind":"shape","slide":3,"role":"bullet-text","bbox":[108,438,406,34]}
+{"kind":"textbox","slide":3,"role":"bullet-text","text":"强调“工作流设计”而不是“单次对话输出”","textChars":20,"textLines":1,"bbox":[108,438,406,34]}
+{"kind":"shape","slide":3,"role":"card","bbox":[622,214,278,150]}
+{"kind":"shape","slide":3,"role":"card-mark","bbox":[640,232,52,8]}
+{"kind":"shape","slide":3,"role":"card-title","bbox":[640,248,242,28]}
+{"kind":"textbox","slide":3,"role":"card-title","text":"普通聊天式 AI","textChars":8,"textLines":1,"bbox":[640,248,242,28]}
+{"kind":"shape","slide":3,"role":"card-body","bbox":[640,286,242,56]}
+{"kind":"textbox","slide":3,"role":"card-body","text":"更偏向回答单个问题\n缺少连续任务组织\n难以沉淀学习路径","textChars":27,"textLines":3,"bbox":[640,286,242,56]}
+{"kind":"shape","slide":3,"role":"card","bbox":[922,214,278,150]}
+{"kind":"shape","slide":3,"role":"card-mark","bbox":[940,232,52,8]}
+{"kind":"shape","slide":3,"role":"card-title","bbox":[940,248,242,28]}
+{"kind":"textbox","slide":3,"role":"card-title","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[940,248,242,28]}
+{"kind":"shape","slide":3,"role":"card-body","bbox":[940,286,242,56]}
+{"kind":"textbox","slide":3,"role":"card-body","text":"围绕任务推进设计\n支持路径规划、对话学习、状态反馈\n形成完整学习闭环","textChars":34,"textLines":3,"bbox":[940,286,242,56]}
+{"kind":"shape","slide":3,"role":"positioning-box","bbox":[622,392,578,152]}
+{"kind":"shape","slide":3,"role":"positioning-label","bbox":[648,416,120,20]}
+{"kind":"textbox","slide":3,"role":"positioning-label","text":"项目定位语","textChars":5,"textLines":1,"bbox":[648,416,120,20]}
+{"kind":"shape","slide":3,"role":"positioning-text","bbox":[648,446,520,64]}
+{"kind":"textbox","slide":3,"role":"positioning-text","text":"从模糊目标出发，帮助用户形成清晰路径，并在学习执行过程中持续获得 AI 陪练与状态反馈。","textChars":44,"textLines":1,"bbox":[648,446,520,64]}
+{"kind":"shape","slide":3,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":3,"role":"footer-page","text":"3 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":4,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":4,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":4,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":4,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":4,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":4,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":4,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":4,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":4,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":4,"role":"title","text":"04  赛道契合度说明","textChars":11,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":4,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":4,"role":"subtitle","text":"知途具备真实问题导向、AI 驱动、完整落地与明确实践价值。","textChars":29,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":4,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":4,"role":"card","bbox":[86,214,548,160]}
+{"kind":"shape","slide":4,"role":"card-mark","bbox":[104,232,52,8]}
+{"kind":"shape","slide":4,"role":"card-title","bbox":[104,248,512,28]}
+{"kind":"textbox","slide":4,"role":"card-title","text":"真实问题导向","textChars":6,"textLines":1,"bbox":[104,248,512,28]}
+{"kind":"shape","slide":4,"role":"card-body","bbox":[104,286,512,66]}
+{"kind":"textbox","slide":4,"role":"card-body","text":"聚焦竞赛、课程项目、自主学习中“有目标却不会推进”的真实痛点。","textChars":31,"textLines":1,"bbox":[104,286,512,66]}
+{"kind":"shape","slide":4,"role":"card-tag-bg","bbox":[522,232,92,26]}
+{"kind":"shape","slide":4,"role":"card-tag","bbox":[528,237,80,16]}
+{"kind":"textbox","slide":4,"role":"card-tag","text":"赛道契合","textChars":4,"textLines":1,"bbox":[528,237,80,16]}
+{"kind":"shape","slide":4,"role":"card","bbox":[646,214,548,160]}
+{"kind":"shape","slide":4,"role":"card-mark","bbox":[664,232,52,8]}
+{"kind":"shape","slide":4,"role":"card-title","bbox":[664,248,512,28]}
+{"kind":"textbox","slide":4,"role":"card-title","text":"人工智能驱动","textChars":6,"textLines":1,"bbox":[664,248,512,28]}
+{"kind":"shape","slide":4,"role":"card-body","bbox":[664,286,512,66]}
+{"kind":"textbox","slide":4,"role":"card-body","text":"目标澄清、路径生成、对话陪练、状态反馈等关键能力均由 AI 深度参与。","textChars":35,"textLines":1,"bbox":[664,286,512,66]}
+{"kind":"shape","slide":4,"role":"card-tag-bg","bbox":[1082,232,92,26]}
+{"kind":"shape","slide":4,"role":"card-tag","bbox":[1088,237,80,16]}
+{"kind":"textbox","slide":4,"role":"card-tag","text":"赛道契合","textChars":4,"textLines":1,"bbox":[1088,237,80,16]}
+{"kind":"shape","slide":4,"role":"card","bbox":[86,402,548,160]}
+{"kind":"shape","slide":4,"role":"card-mark","bbox":[104,420,52,8]}
+{"kind":"shape","slide":4,"role":"card-title","bbox":[104,436,512,28]}
+{"kind":"textbox","slide":4,"role":"card-title","text":"应用落地完整","textChars":6,"textLines":1,"bbox":[104,436,512,28]}
+{"kind":"shape","slide":4,"role":"card-body","bbox":[104,474,512,66]}
+{"kind":"textbox","slide":4,"role":"card-body","text":"前后端、业务流程、管理后台、部署链路均已形成可运行原型。","textChars":28,"textLines":1,"bbox":[104,474,512,66]}
+{"kind":"shape","slide":4,"role":"card-tag-bg","bbox":[522,420,92,26]}
+{"kind":"shape","slide":4,"role":"card-tag","bbox":[528,425,80,16]}
+{"kind":"textbox","slide":4,"role":"card-tag","text":"赛道契合","textChars":4,"textLines":1,"bbox":[528,425,80,16]}
+{"kind":"shape","slide":4,"role":"card","bbox":[646,402,548,160]}
+{"kind":"shape","slide":4,"role":"card-mark","bbox":[664,420,52,8]}
+{"kind":"shape","slide":4,"role":"card-title","bbox":[664,436,512,28]}
+{"kind":"textbox","slide":4,"role":"card-title","text":"实践价值明确","textChars":6,"textLines":1,"bbox":[664,436,512,28]}
+{"kind":"shape","slide":4,"role":"card-body","bbox":[664,474,512,66]}
+{"kind":"textbox","slide":4,"role":"card-body","text":"既服务个人学习，也可延展到教学辅助、训练营、项目制课程等场景。","textChars":31,"textLines":1,"bbox":[664,474,512,66]}
+{"kind":"shape","slide":4,"role":"card-tag-bg","bbox":[1082,420,92,26]}
+{"kind":"shape","slide":4,"role":"card-tag","bbox":[1088,425,80,16]}
+{"kind":"textbox","slide":4,"role":"card-tag","text":"赛道契合","textChars":4,"textLines":1,"bbox":[1088,425,80,16]}
+{"kind":"shape","slide":4,"role":"fit-summary-bg","bbox":[96,590,1088,60]}
+{"kind":"shape","slide":4,"role":"fit-summary","bbox":[126,607,1020,24]}
+{"kind":"textbox","slide":4,"role":"fit-summary","text":"因此，知途不是概念型展示，而是面向教育场景的“人工智能应用实践型作品”。","textChars":36,"textLines":1,"bbox":[126,607,1020,24]}
+{"kind":"shape","slide":4,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":4,"role":"footer-page","text":"4 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":5,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":5,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":5,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":5,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":5,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":5,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":5,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":5,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":5,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":5,"role":"title","text":"05  核心理念","textChars":8,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":5,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":5,"role":"subtitle","text":"让 AI 从“回答问题”升级为“组织学习”。","textChars":22,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":5,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":5,"role":"card","bbox":[82,196,1118,92]}
+{"kind":"shape","slide":5,"role":"card-mark","bbox":[100,214,52,8]}
+{"kind":"shape","slide":5,"role":"card-title","bbox":[100,230,1082,28]}
+{"kind":"textbox","slide":5,"role":"card-title","text":"01 先理解，再规划","textChars":10,"textLines":1,"bbox":[100,230,1082,28]}
+{"kind":"shape","slide":5,"role":"card-body","bbox":[100,268,1082,-2]}
+{"kind":"textbox","slide":5,"role":"card-body","text":"通过多轮目标对话，先洞察真实目标、基础、时间与限制条件。","textChars":28,"textLines":1,"bbox":[100,268,1082,-2]}
+{"kind":"shape","slide":5,"role":"card","bbox":[82,308,1118,92]}
+{"kind":"shape","slide":5,"role":"card-mark","bbox":[100,326,52,8]}
+{"kind":"shape","slide":5,"role":"card-title","bbox":[100,342,1082,28]}
+{"kind":"textbox","slide":5,"role":"card-title","text":"02 以任务推进为核心","textChars":11,"textLines":1,"bbox":[100,342,1082,28]}
+{"kind":"shape","slide":5,"role":"card-body","bbox":[100,380,1082,-2]}
+{"kind":"textbox","slide":5,"role":"card-body","text":"围绕阶段成果和下一步行动组织学习，而不是堆叠知识点。","textChars":26,"textLines":1,"bbox":[100,380,1082,-2]}
+{"kind":"shape","slide":5,"role":"card","bbox":[82,420,1118,92]}
+{"kind":"shape","slide":5,"role":"card-mark","bbox":[100,438,52,8]}
+{"kind":"shape","slide":5,"role":"card-title","bbox":[100,454,1082,28]}
+{"kind":"textbox","slide":5,"role":"card-title","text":"03 以对话组织学习","textChars":10,"textLines":1,"bbox":[100,454,1082,28]}
+{"kind":"shape","slide":5,"role":"card-body","bbox":[100,492,1082,-2]}
+{"kind":"textbox","slide":5,"role":"card-body","text":"通过连续追问、反馈和提示，让学习者在推进中被引导。","textChars":25,"textLines":1,"bbox":[100,492,1082,-2]}
+{"kind":"shape","slide":5,"role":"card","bbox":[82,532,1118,92]}
+{"kind":"shape","slide":5,"role":"card-mark","bbox":[100,550,52,8]}
+{"kind":"shape","slide":5,"role":"card-title","bbox":[100,566,1082,28]}
+{"kind":"textbox","slide":5,"role":"card-title","text":"04 过程可反馈，系统可扩展","textChars":14,"textLines":1,"bbox":[100,566,1082,28]}
+{"kind":"shape","slide":5,"role":"card-body","bbox":[100,604,1082,-2]}
+{"kind":"textbox","slide":5,"role":"card-body","text":"既观察学习状态，也通过前后端分层与 Gateway 架构支持后续扩展。","textChars":35,"textLines":1,"bbox":[100,604,1082,-2]}
+{"kind":"shape","slide":5,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":5,"role":"footer-page","text":"5 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":6,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":6,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":6,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":6,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":6,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":6,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":6,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":6,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":6,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":6,"role":"title","text":"06  应用场景与用户价值","textChars":13,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":6,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":6,"role":"subtitle","text":"项目既服务个人学习，也具备面向教学组织场景扩展的潜力。","textChars":27,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":6,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":6,"role":"scenes-panel","bbox":[56,208,496,420]}
+{"kind":"shape","slide":6,"role":"scene-title","bbox":[82,234,200,28]}
+{"kind":"textbox","slide":6,"role":"scene-title","text":"典型应用场景","textChars":6,"textLines":1,"bbox":[82,234,200,28]}
+{"kind":"shape","slide":6,"role":"bullet","bbox":[84,292,14,14]}
+{"kind":"shape","slide":6,"role":"bullet-text","bbox":[108,286,396,34]}
+{"kind":"textbox","slide":6,"role":"bullet-text","text":"比赛项目拆解：课程设计、竞赛开发、论文实践","textChars":21,"textLines":1,"bbox":[108,286,396,34]}
+{"kind":"shape","slide":6,"role":"bullet","bbox":[84,366,14,14]}
+{"kind":"shape","slide":6,"role":"bullet-text","bbox":[108,360,396,34]}
+{"kind":"textbox","slide":6,"role":"bullet-text","text":"自主学习规划：围绕技能提升、证书目标形成学习路径","textChars":24,"textLines":1,"bbox":[108,360,396,34]}
+{"kind":"shape","slide":6,"role":"bullet","bbox":[84,440,14,14]}
+{"kind":"shape","slide":6,"role":"bullet-text","bbox":[108,434,396,34]}
+{"kind":"textbox","slide":6,"role":"bullet-text","text":"跨学科任务推进：技术、产品、设计、表达同步推进","textChars":23,"textLines":1,"bbox":[108,434,396,34]}
+{"kind":"shape","slide":6,"role":"bullet","bbox":[84,514,14,14]}
+{"kind":"shape","slide":6,"role":"bullet-text","bbox":[108,508,396,34]}
+{"kind":"textbox","slide":6,"role":"bullet-text","text":"教学辅助与过程追踪：训练营、课程辅导、助教跟踪","textChars":23,"textLines":1,"bbox":[108,508,396,34]}
+{"kind":"shape","slide":6,"role":"value-panel","bbox":[586,208,642,420]}
+{"kind":"shape","slide":6,"role":"value-title","bbox":[612,234,160,28]}
+{"kind":"textbox","slide":6,"role":"value-title","text":"用户价值","textChars":4,"textLines":1,"bbox":[612,234,160,28]}
+{"kind":"shape","slide":6,"role":"card","bbox":[612,284,274,126]}
+{"kind":"shape","slide":6,"role":"card-mark","bbox":[630,302,52,8]}
+{"kind":"shape","slide":6,"role":"card-title","bbox":[630,318,238,28]}
+{"kind":"textbox","slide":6,"role":"card-title","text":"从“想做什么”到“下一步做什么”","textChars":16,"textLines":1,"bbox":[630,318,238,28]}
+{"kind":"shape","slide":6,"role":"card-body","bbox":[630,356,238,32]}
+{"kind":"textbox","slide":6,"role":"card-body","text":"帮助学习者明确行动，降低启动门槛。","textChars":17,"textLines":1,"bbox":[630,356,238,32]}
+{"kind":"shape","slide":6,"role":"card","bbox":[904,284,274,126]}
+{"kind":"shape","slide":6,"role":"card-mark","bbox":[922,302,52,8]}
+{"kind":"shape","slide":6,"role":"card-title","bbox":[922,318,238,28]}
+{"kind":"textbox","slide":6,"role":"card-title","text":"从“模糊目标”到“清晰路径”","textChars":14,"textLines":1,"bbox":[922,318,238,28]}
+{"kind":"shape","slide":6,"role":"card-body","bbox":[922,356,238,32]}
+{"kind":"textbox","slide":6,"role":"card-body","text":"通过 AI 路径规划形成阶段化学习结构。","textChars":20,"textLines":1,"bbox":[922,356,238,32]}
+{"kind":"shape","slide":6,"role":"card","bbox":[612,430,274,126]}
+{"kind":"shape","slide":6,"role":"card-mark","bbox":[630,448,52,8]}
+{"kind":"shape","slide":6,"role":"card-title","bbox":[630,464,238,28]}
+{"kind":"textbox","slide":6,"role":"card-title","text":"从“看资料”到“互动推进”","textChars":13,"textLines":1,"bbox":[630,464,238,28]}
+{"kind":"shape","slide":6,"role":"card-body","bbox":[630,502,238,32]}
+{"kind":"textbox","slide":6,"role":"card-body","text":"对话学习和开放学习支持持续陪练。","textChars":16,"textLines":1,"bbox":[630,502,238,32]}
+{"kind":"shape","slide":6,"role":"card","bbox":[904,430,274,126]}
+{"kind":"shape","slide":6,"role":"card-mark","bbox":[922,448,52,8]}
+{"kind":"shape","slide":6,"role":"card-title","bbox":[922,464,238,28]}
+{"kind":"textbox","slide":6,"role":"card-title","text":"从“做完没”到“状态可视”","textChars":13,"textLines":1,"bbox":[922,464,238,28]}
+{"kind":"shape","slide":6,"role":"card-body","bbox":[922,502,238,32]}
+{"kind":"textbox","slide":6,"role":"card-body","text":"学习状态与成长成就强化过程反馈。","textChars":16,"textLines":1,"bbox":[922,502,238,32]}
+{"kind":"shape","slide":6,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":6,"role":"footer-page","text":"6 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":7,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":7,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":7,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":7,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":7,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":7,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":7,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":7,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":7,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":7,"role":"title","text":"07  整体解决方案","textChars":10,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":7,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":7,"role":"subtitle","text":"围绕目标澄清、路径生成、学习推进、状态反馈构建 AI 驱动闭环。","textChars":32,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":7,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":7,"role":"step-card","bbox":[56,250,262,160]}
+{"kind":"shape","slide":7,"role":"step-index-bg","bbox":[74,268,42,42]}
+{"kind":"shape","slide":7,"role":"step-index","bbox":[74,273,42,20]}
+{"kind":"textbox","slide":7,"role":"step-index","text":"1","textChars":1,"textLines":1,"bbox":[74,273,42,20]}
+{"kind":"shape","slide":7,"role":"step-title","bbox":[130,268,170,28]}
+{"kind":"textbox","slide":7,"role":"step-title","text":"目标对话","textChars":4,"textLines":1,"bbox":[130,268,170,28]}
+{"kind":"shape","slide":7,"role":"step-desc","bbox":[130,302,170,92]}
+{"kind":"textbox","slide":7,"role":"step-desc","text":"通过多轮问答澄清用户真实目标、基础、时间和限制条件。","textChars":26,"textLines":1,"bbox":[130,302,170,92]}
+{"kind":"shape","slide":7,"role":"arrow","bbox":[330,320,46,20]}
+{"kind":"shape","slide":7,"role":"step-card","bbox":[392,250,262,160]}
+{"kind":"shape","slide":7,"role":"step-index-bg","bbox":[410,268,42,42]}
+{"kind":"shape","slide":7,"role":"step-index","bbox":[410,273,42,20]}
+{"kind":"textbox","slide":7,"role":"step-index","text":"2","textChars":1,"textLines":1,"bbox":[410,273,42,20]}
+{"kind":"shape","slide":7,"role":"step-title","bbox":[466,268,170,28]}
+{"kind":"textbox","slide":7,"role":"step-title","text":"学习路径生成","textChars":6,"textLines":1,"bbox":[466,268,170,28]}
+{"kind":"shape","slide":7,"role":"step-desc","bbox":[466,302,170,92]}
+{"kind":"textbox","slide":7,"role":"step-desc","text":"把模糊目标转化为阶段计划、任务拆解与可执行路径。","textChars":24,"textLines":1,"bbox":[466,302,170,92]}
+{"kind":"shape","slide":7,"role":"arrow","bbox":[666,320,46,20]}
+{"kind":"shape","slide":7,"role":"step-card","bbox":[728,250,262,160]}
+{"kind":"shape","slide":7,"role":"step-index-bg","bbox":[746,268,42,42]}
+{"kind":"shape","slide":7,"role":"step-index","bbox":[746,273,42,20]}
+{"kind":"textbox","slide":7,"role":"step-index","text":"3","textChars":1,"textLines":1,"bbox":[746,273,42,20]}
+{"kind":"shape","slide":7,"role":"step-title","bbox":[802,268,170,28]}
+{"kind":"textbox","slide":7,"role":"step-title","text":"对话学习 / 开放学习","textChars":11,"textLines":1,"bbox":[802,268,170,28]}
+{"kind":"shape","slide":7,"role":"step-desc","bbox":[802,302,170,92]}
+{"kind":"textbox","slide":7,"role":"step-desc","text":"围绕具体任务持续推进，获得追问、反馈、提示与陪练。","textChars":25,"textLines":1,"bbox":[802,302,170,92]}
+{"kind":"shape","slide":7,"role":"arrow","bbox":[1002,320,46,20]}
+{"kind":"shape","slide":7,"role":"step-card","bbox":[1022,250,202,160]}
+{"kind":"shape","slide":7,"role":"step-index-bg","bbox":[1040,268,42,42]}
+{"kind":"shape","slide":7,"role":"step-index","bbox":[1040,273,42,20]}
+{"kind":"textbox","slide":7,"role":"step-index","text":"4","textChars":1,"textLines":1,"bbox":[1040,273,42,20]}
+{"kind":"shape","slide":7,"role":"step-title","bbox":[1096,268,110,28]}
+{"kind":"textbox","slide":7,"role":"step-title","text":"状态反馈","textChars":4,"textLines":1,"bbox":[1096,268,110,28]}
+{"kind":"shape","slide":7,"role":"step-desc","bbox":[1096,302,110,92]}
+{"kind":"textbox","slide":7,"role":"step-desc","text":"跟踪学习状态、成长成就与过程指标，帮助用户调整节奏。","textChars":26,"textLines":1,"bbox":[1096,302,110,92]}
+{"kind":"shape","slide":7,"role":"solution-summary-bg","bbox":[102,486,1070,90]}
+{"kind":"shape","slide":7,"role":"solution-summary","bbox":[132,512,1010,38]}
+{"kind":"textbox","slide":7,"role":"solution-summary","text":"知途的关键不是“生成一份计划”，而是把计划、任务、会话和状态反馈组织成一个持续推进的学习系统。","textChars":47,"textLines":1,"bbox":[132,512,1010,38]}
+{"kind":"shape","slide":7,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":7,"role":"footer-page","text":"7 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":8,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":8,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":8,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":8,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":8,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":8,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":8,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":8,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":8,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":8,"role":"title","text":"08  核心业务闭环","textChars":10,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":8,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":8,"role":"subtitle","text":"用户不是“问完即走”，而是持续留在一个学习工作流中。","textChars":26,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":8,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[58,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[100,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[100,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"1","textChars":1,"textLines":1,"bbox":[100,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[70,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"注册/登录","textChars":5,"textLines":1,"bbox":[70,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[184,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[206,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[248,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[248,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"2","textChars":1,"textLines":1,"bbox":[248,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[218,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"学习总览","textChars":4,"textLines":1,"bbox":[218,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[332,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[354,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[396,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[396,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"3","textChars":1,"textLines":1,"bbox":[396,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[366,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"目标对话","textChars":4,"textLines":1,"bbox":[366,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[480,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[502,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[544,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[544,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"4","textChars":1,"textLines":1,"bbox":[544,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[514,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"路径生成","textChars":4,"textLines":1,"bbox":[514,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[628,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[650,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[692,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[692,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"5","textChars":1,"textLines":1,"bbox":[692,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[662,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"路径详情","textChars":4,"textLines":1,"bbox":[662,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[776,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[798,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[840,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[840,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"6","textChars":1,"textLines":1,"bbox":[840,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[810,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"任务推进","textChars":4,"textLines":1,"bbox":[810,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[924,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[946,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[988,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[988,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"7","textChars":1,"textLines":1,"bbox":[988,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[958,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"学习状态","textChars":4,"textLines":1,"bbox":[958,322,102,28]}
+{"kind":"shape","slide":8,"role":"arrow","bbox":[1072,324,22,12]}
+{"kind":"shape","slide":8,"role":"flow-node","bbox":[1094,288,126,92]}
+{"kind":"shape","slide":8,"role":"flow-index","bbox":[1136,246,42,42]}
+{"kind":"shape","slide":8,"role":"flow-num","bbox":[1136,252,42,16]}
+{"kind":"textbox","slide":8,"role":"flow-num","text":"8","textChars":1,"textLines":1,"bbox":[1136,252,42,16]}
+{"kind":"shape","slide":8,"role":"flow-title","bbox":[1106,322,102,28]}
+{"kind":"textbox","slide":8,"role":"flow-title","text":"成长成就","textChars":4,"textLines":1,"bbox":[1106,322,102,28]}
+{"kind":"shape","slide":8,"role":"flow-desc-panel","bbox":[120,450,1040,126]}
+{"kind":"shape","slide":8,"role":"bullet","bbox":[158,488,14,14]}
+{"kind":"shape","slide":8,"role":"bullet-text","bbox":[182,482,916,34]}
+{"kind":"textbox","slide":8,"role":"bullet-text","text":"前端主链路覆盖：学习总览、目标对话、学习路径、任务详情、对话学习、开放学习、学习状态、成长成就。","textChars":48,"textLines":1,"bbox":[182,482,916,34]}
+{"kind":"shape","slide":8,"role":"bullet","bbox":[158,534,14,14]}
+{"kind":"shape","slide":8,"role":"bullet-text","bbox":[182,528,916,34]}
+{"kind":"textbox","slide":8,"role":"bullet-text","text":"后端业务支撑：目标对话服务、学习路径服务、对话学习服务、学习状态服务、AI Teaching Orchestrator。","textChars":60,"textLines":1,"bbox":[182,528,916,34]}
+{"kind":"shape","slide":8,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":8,"role":"footer-page","text":"8 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":9,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":9,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":9,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":9,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":9,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":9,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":9,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":9,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":9,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":9,"role":"title","text":"09  用户端核心功能展示","textChars":13,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":9,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":9,"role":"subtitle","text":"通过核心页面串起“目标澄清—路径执行—学习反馈”的用户主链路。","textChars":31,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":9,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":9,"role":"home-ui-frame","bbox":[58,198,360,214]}
+{"kind":"image","slide":9,"role":"home-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\首页.png","bbox":[58,198,360,214]}
+{"kind":"shape","slide":9,"role":"path-ui-frame","bbox":[438,198,360,214]}
+{"kind":"image","slide":9,"role":"path-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\路径页.png","bbox":[438,198,360,214]}
+{"kind":"shape","slide":9,"role":"teach-ui-frame","bbox":[818,198,360,214]}
+{"kind":"image","slide":9,"role":"teach-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\教学页.png","bbox":[818,198,360,214]}
+{"kind":"shape","slide":9,"role":"state-ui-frame","bbox":[248,432,360,214]}
+{"kind":"image","slide":9,"role":"state-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\状态页.png","bbox":[248,432,360,214]}
+{"kind":"shape","slide":9,"role":"eval-ui-frame","bbox":[628,432,360,214]}
+{"kind":"image","slide":9,"role":"eval-ui","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\评价页.png","bbox":[628,432,360,214]}
+{"kind":"shape","slide":9,"role":"cap-bg","bbox":[80,376,184,26]}
+{"kind":"shape","slide":9,"role":"cap-title","bbox":[86,382,172,14]}
+{"kind":"textbox","slide":9,"role":"cap-title","text":"首页 / 学习总览","textChars":9,"textLines":1,"bbox":[86,382,172,14]}
+{"kind":"shape","slide":9,"role":"cap-bg","bbox":[460,376,184,26]}
+{"kind":"shape","slide":9,"role":"cap-title","bbox":[466,382,172,14]}
+{"kind":"textbox","slide":9,"role":"cap-title","text":"学习路径页","textChars":5,"textLines":1,"bbox":[466,382,172,14]}
+{"kind":"shape","slide":9,"role":"cap-bg","bbox":[840,376,184,26]}
+{"kind":"shape","slide":9,"role":"cap-title","bbox":[846,382,172,14]}
+{"kind":"textbox","slide":9,"role":"cap-title","text":"对话学习页","textChars":5,"textLines":1,"bbox":[846,382,172,14]}
+{"kind":"shape","slide":9,"role":"cap-bg","bbox":[270,610,184,26]}
+{"kind":"shape","slide":9,"role":"cap-title","bbox":[276,616,172,14]}
+{"kind":"textbox","slide":9,"role":"cap-title","text":"学习状态页","textChars":5,"textLines":1,"bbox":[276,616,172,14]}
+{"kind":"shape","slide":9,"role":"cap-bg","bbox":[650,610,184,26]}
+{"kind":"shape","slide":9,"role":"cap-title","bbox":[656,616,172,14]}
+{"kind":"textbox","slide":9,"role":"cap-title","text":"课程评价页","textChars":5,"textLines":1,"bbox":[656,616,172,14]}
+{"kind":"shape","slide":9,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":9,"role":"footer-page","text":"9 / 16","textChars":6,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":10,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":10,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":10,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":10,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":10,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":10,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":10,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":10,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":10,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":10,"role":"title","text":"10  管理端与平台观测","textChars":12,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":10,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":10,"role":"subtitle","text":"项目不仅有用户端，也考虑了平台治理、运维观察与持续迭代能力。","textChars":30,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":10,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":10,"role":"ops-state-frame","bbox":[58,208,530,320]}
+{"kind":"image","slide":10,"role":"ops-state","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\状态页.png","bbox":[58,208,530,320]}
+{"kind":"shape","slide":10,"role":"card","bbox":[620,208,286,144]}
+{"kind":"shape","slide":10,"role":"card-mark","bbox":[638,226,52,8]}
+{"kind":"shape","slide":10,"role":"card-title","bbox":[638,242,250,28]}
+{"kind":"textbox","slide":10,"role":"card-title","text":"平台概览","textChars":4,"textLines":1,"bbox":[638,242,250,28]}
+{"kind":"shape","slide":10,"role":"card-body","bbox":[638,280,250,50]}
+{"kind":"textbox","slide":10,"role":"card-body","text":"面向管理员展示平台运行状态、统计信息与活动概览。","textChars":24,"textLines":1,"bbox":[638,280,250,50]}
+{"kind":"shape","slide":10,"role":"card","bbox":[924,208,286,144]}
+{"kind":"shape","slide":10,"role":"card-mark","bbox":[942,226,52,8]}
+{"kind":"shape","slide":10,"role":"card-title","bbox":[942,242,250,28]}
+{"kind":"textbox","slide":10,"role":"card-title","text":"用户管理","textChars":4,"textLines":1,"bbox":[942,242,250,28]}
+{"kind":"shape","slide":10,"role":"card-body","bbox":[942,280,250,50]}
+{"kind":"textbox","slide":10,"role":"card-body","text":"支持用户管理与身份体系维护，为后续运营提供基础。","textChars":24,"textLines":1,"bbox":[942,280,250,50]}
+{"kind":"shape","slide":10,"role":"card","bbox":[620,372,286,144]}
+{"kind":"shape","slide":10,"role":"card-mark","bbox":[638,390,52,8]}
+{"kind":"shape","slide":10,"role":"card-title","bbox":[638,406,250,28]}
+{"kind":"textbox","slide":10,"role":"card-title","text":"接口配置","textChars":4,"textLines":1,"bbox":[638,406,250,28]}
+{"kind":"shape","slide":10,"role":"card-body","bbox":[638,444,250,50]}
+{"kind":"textbox","slide":10,"role":"card-body","text":"支持模型接口配置、调用能力治理与环境维护。","textChars":21,"textLines":1,"bbox":[638,444,250,50]}
+{"kind":"shape","slide":10,"role":"card","bbox":[924,372,286,144]}
+{"kind":"shape","slide":10,"role":"card-mark","bbox":[942,390,52,8]}
+{"kind":"shape","slide":10,"role":"card-title","bbox":[942,406,250,28]}
+{"kind":"textbox","slide":10,"role":"card-title","text":"执行日志","textChars":4,"textLines":1,"bbox":[942,406,250,28]}
+{"kind":"shape","slide":10,"role":"card-body","bbox":[942,444,250,50]}
+{"kind":"textbox","slide":10,"role":"card-body","text":"保留平台运行过程信息，便于排查与持续优化。","textChars":21,"textLines":1,"bbox":[942,444,250,50]}
+{"kind":"shape","slide":10,"role":"ops-summary","bbox":[58,552,1152,76]}
+{"kind":"shape","slide":10,"role":"ops-summary-text","bbox":[92,578,1084,24]}
+{"kind":"textbox","slide":10,"role":"ops-summary-text","text":"后台能力的存在，说明知途不是单一页面展示，而是具备“可观测、可维护、可迭代”的平台化工程原型。","textChars":47,"textLines":1,"bbox":[92,578,1084,24]}
+{"kind":"shape","slide":10,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":10,"role":"footer-page","text":"10 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":11,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":11,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":11,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":11,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":11,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":11,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":11,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":11,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":11,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":11,"role":"title","text":"11  项目创新点","textChars":9,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":11,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":11,"role":"subtitle","text":"AI 不止生成内容，更组织学习过程。","textChars":18,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":11,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":11,"role":"card","bbox":[76,214,260,206]}
+{"kind":"shape","slide":11,"role":"card-mark","bbox":[94,232,52,8]}
+{"kind":"shape","slide":11,"role":"card-title","bbox":[94,248,224,28]}
+{"kind":"textbox","slide":11,"role":"card-title","text":"创新点一：目标澄清前置","textChars":11,"textLines":1,"bbox":[94,248,224,28]}
+{"kind":"shape","slide":11,"role":"card-body","bbox":[94,286,224,112]}
+{"kind":"textbox","slide":11,"role":"card-body","text":"不同于直接输出模板化计划，系统先通过多轮对话理解真实目标。","textChars":29,"textLines":1,"bbox":[94,286,224,112]}
+{"kind":"shape","slide":11,"role":"card-tag-bg","bbox":[224,232,92,26]}
+{"kind":"shape","slide":11,"role":"card-tag","bbox":[230,237,80,16]}
+{"kind":"textbox","slide":11,"role":"card-tag","text":"差异化","textChars":3,"textLines":1,"bbox":[230,237,80,16]}
+{"kind":"shape","slide":11,"role":"card","bbox":[362,214,260,206]}
+{"kind":"shape","slide":11,"role":"card-mark","bbox":[380,232,52,8]}
+{"kind":"shape","slide":11,"role":"card-title","bbox":[380,248,224,28]}
+{"kind":"textbox","slide":11,"role":"card-title","text":"创新点二：路径—任务—会话联动","textChars":15,"textLines":1,"bbox":[380,248,224,28]}
+{"kind":"shape","slide":11,"role":"card-body","bbox":[380,286,224,112]}
+{"kind":"textbox","slide":11,"role":"card-body","text":"学习路径、任务拆解、对话学习连续衔接，形成推进闭环。","textChars":26,"textLines":1,"bbox":[380,286,224,112]}
+{"kind":"shape","slide":11,"role":"card-tag-bg","bbox":[510,232,92,26]}
+{"kind":"shape","slide":11,"role":"card-tag","bbox":[516,237,80,16]}
+{"kind":"textbox","slide":11,"role":"card-tag","text":"闭环化","textChars":3,"textLines":1,"bbox":[516,237,80,16]}
+{"kind":"shape","slide":11,"role":"card","bbox":[648,214,260,206]}
+{"kind":"shape","slide":11,"role":"card-mark","bbox":[666,232,52,8]}
+{"kind":"shape","slide":11,"role":"card-title","bbox":[666,248,224,28]}
+{"kind":"textbox","slide":11,"role":"card-title","text":"创新点三：学习状态可反馈","textChars":12,"textLines":1,"bbox":[666,248,224,28]}
+{"kind":"shape","slide":11,"role":"card-body","bbox":[666,286,224,112]}
+{"kind":"textbox","slide":11,"role":"card-body","text":"关注学习节奏、理解程度、迁移与负荷，让过程可观测。","textChars":25,"textLines":1,"bbox":[666,286,224,112]}
+{"kind":"shape","slide":11,"role":"card-tag-bg","bbox":[796,232,92,26]}
+{"kind":"shape","slide":11,"role":"card-tag","bbox":[802,237,80,16]}
+{"kind":"textbox","slide":11,"role":"card-tag","text":"过程化","textChars":3,"textLines":1,"bbox":[802,237,80,16]}
+{"kind":"shape","slide":11,"role":"card","bbox":[934,214,260,206]}
+{"kind":"shape","slide":11,"role":"card-mark","bbox":[952,232,52,8]}
+{"kind":"shape","slide":11,"role":"card-title","bbox":[952,248,224,28]}
+{"kind":"textbox","slide":11,"role":"card-title","text":"创新点四：工程化 AI 平台","textChars":14,"textLines":1,"bbox":[952,248,224,28]}
+{"kind":"shape","slide":11,"role":"card-body","bbox":[952,286,224,112]}
+{"kind":"textbox","slide":11,"role":"card-body","text":"前后端、数据层、Gateway、Agent 模块一体联动，可持续扩展。","textChars":35,"textLines":1,"bbox":[952,286,224,112]}
+{"kind":"shape","slide":11,"role":"card-tag-bg","bbox":[1082,232,92,26]}
+{"kind":"shape","slide":11,"role":"card-tag","bbox":[1088,237,80,16]}
+{"kind":"textbox","slide":11,"role":"card-tag","text":"平台化","textChars":3,"textLines":1,"bbox":[1088,237,80,16]}
+{"kind":"shape","slide":11,"role":"innovation-summary-bg","bbox":[126,472,1028,114]}
+{"kind":"shape","slide":11,"role":"innovation-summary","bbox":[164,506,952,46]}
+{"kind":"textbox","slide":11,"role":"innovation-summary","text":"相比普通聊天式 AI，知途更强调“先理解目标—再组织路径—再推动执行—再反馈状态”的完整学习工作流。","textChars":50,"textLines":1,"bbox":[164,506,952,46]}
+{"kind":"shape","slide":11,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":11,"role":"footer-page","text":"11 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":12,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":12,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":12,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":12,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":12,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":12,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":12,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":12,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":12,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":12,"role":"title","text":"12  技术架构设计","textChars":10,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":12,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":12,"role":"subtitle","text":"前后端分离 + AI Gateway 编排，支撑完整业务闭环与后续能力扩展。","textChars":38,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":12,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":12,"role":"layer-left","bbox":[90,184,420,108]}
+{"kind":"shape","slide":12,"role":"layer-title","bbox":[120,206,220,24]}
+{"kind":"textbox","slide":12,"role":"layer-title","text":"用户浏览器","textChars":5,"textLines":1,"bbox":[120,206,220,24]}
+{"kind":"shape","slide":12,"role":"layer-desc","bbox":[120,242,320,20]}
+{"kind":"textbox","slide":12,"role":"layer-desc","text":"学习者 / 管理员","textChars":9,"textLines":1,"bbox":[120,242,320,20]}
+{"kind":"shape","slide":12,"role":"layer-left","bbox":[90,296,420,108]}
+{"kind":"shape","slide":12,"role":"layer-title","bbox":[120,318,220,24]}
+{"kind":"textbox","slide":12,"role":"layer-title","text":"Vue 前端应用","textChars":8,"textLines":1,"bbox":[120,318,220,24]}
+{"kind":"shape","slide":12,"role":"layer-desc","bbox":[120,354,320,20]}
+{"kind":"textbox","slide":12,"role":"layer-desc","text":"页面、路由、状态管理、设计系统","textChars":15,"textLines":1,"bbox":[120,354,320,20]}
+{"kind":"shape","slide":12,"role":"layer-left","bbox":[90,408,420,108]}
+{"kind":"shape","slide":12,"role":"layer-title","bbox":[120,430,220,24]}
+{"kind":"textbox","slide":12,"role":"layer-title","text":"Express API","textChars":11,"textLines":1,"bbox":[120,430,220,24]}
+{"kind":"shape","slide":12,"role":"layer-desc","bbox":[120,466,320,20]}
+{"kind":"textbox","slide":12,"role":"layer-desc","text":"鉴权、学习路径、目标对话、状态跟踪等路由服务","textChars":22,"textLines":1,"bbox":[120,466,320,20]}
+{"kind":"shape","slide":12,"role":"layer-left","bbox":[90,520,420,108]}
+{"kind":"shape","slide":12,"role":"layer-title","bbox":[120,542,220,24]}
+{"kind":"textbox","slide":12,"role":"layer-title","text":"Prisma + 数据库","textChars":12,"textLines":1,"bbox":[120,542,220,24]}
+{"kind":"shape","slide":12,"role":"layer-desc","bbox":[120,578,320,20]}
+{"kind":"textbox","slide":12,"role":"layer-desc","text":"SQLite 开发环境 / PostgreSQL 扩展能力","textChars":29,"textLines":1,"bbox":[120,578,320,20]}
+{"kind":"shape","slide":12,"role":"gateway","bbox":[690,268,458,132]}
+{"kind":"shape","slide":12,"role":"gateway-title","bbox":[724,294,260,24]}
+{"kind":"textbox","slide":12,"role":"gateway-title","text":"EduClaw Gateway","textChars":15,"textLines":1,"bbox":[724,294,260,24]}
+{"kind":"shape","slide":12,"role":"gateway-desc","bbox":[724,334,360,34]}
+{"kind":"textbox","slide":12,"role":"gateway-desc","text":"统一接入模型、Agent、Skill、Plugin，作为 AI 能力编排入口。","textChars":39,"textLines":1,"bbox":[724,334,360,34]}
+{"kind":"shape","slide":12,"role":"ai-box1","bbox":[690,444,138,88]}
+{"kind":"shape","slide":12,"role":"ai-box2","bbox":[850,444,138,88]}
+{"kind":"shape","slide":12,"role":"ai-box3","bbox":[1010,444,138,88]}
+{"kind":"shape","slide":12,"role":"ai-t1","bbox":[730,476,60,18]}
+{"kind":"textbox","slide":12,"role":"ai-t1","text":"模型","textChars":2,"textLines":1,"bbox":[730,476,60,18]}
+{"kind":"shape","slide":12,"role":"ai-t2","bbox":[890,476,60,18]}
+{"kind":"textbox","slide":12,"role":"ai-t2","text":"Agent","textChars":5,"textLines":1,"bbox":[890,476,60,18]}
+{"kind":"shape","slide":12,"role":"ai-t3","bbox":[1024,476,110,18]}
+{"kind":"textbox","slide":12,"role":"ai-t3","text":"Skill/Plugin","textChars":12,"textLines":1,"bbox":[1024,476,110,18]}
+{"kind":"shape","slide":12,"role":"arrow","bbox":[522,330,70,18]}
+{"kind":"shape","slide":12,"role":"arrow","bbox":[520,474,72,18]}
+{"kind":"shape","slide":12,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":12,"role":"footer-page","text":"12 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":13,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":13,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":13,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":13,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":13,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":13,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":13,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":13,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":13,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":13,"role":"title","text":"13  关键实现与工程落地","textChars":13,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":13,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":13,"role":"subtitle","text":"从前端体验、后端服务到数据模型，形成完整工程落地链路。","textChars":27,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":13,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":13,"role":"card","bbox":[70,220,356,346]}
+{"kind":"shape","slide":13,"role":"card-mark","bbox":[88,238,52,8]}
+{"kind":"shape","slide":13,"role":"card-title","bbox":[88,254,320,28]}
+{"kind":"textbox","slide":13,"role":"card-title","text":"前端实现","textChars":4,"textLines":1,"bbox":[88,254,320,28]}
+{"kind":"shape","slide":13,"role":"card-body","bbox":[88,292,320,252]}
+{"kind":"textbox","slide":13,"role":"card-body","text":"Vue 3 + TypeScript + Vite + Pinia + Vue Router + Element Plus\n\n建立统一 aa 设计系统与全局样式 token，支撑沉浸式学习工作流。","textChars":98,"textLines":3,"bbox":[88,292,320,252]}
+{"kind":"shape","slide":13,"role":"card-tag-bg","bbox":[314,238,92,26]}
+{"kind":"shape","slide":13,"role":"card-tag","bbox":[320,243,80,16]}
+{"kind":"textbox","slide":13,"role":"card-tag","text":"体验层","textChars":3,"textLines":1,"bbox":[320,243,80,16]}
+{"kind":"shape","slide":13,"role":"card","bbox":[462,220,356,346]}
+{"kind":"shape","slide":13,"role":"card-mark","bbox":[480,238,52,8]}
+{"kind":"shape","slide":13,"role":"card-title","bbox":[480,254,320,28]}
+{"kind":"textbox","slide":13,"role":"card-title","text":"后端实现","textChars":4,"textLines":1,"bbox":[480,254,320,28]}
+{"kind":"shape","slide":13,"role":"card-body","bbox":[480,292,320,252]}
+{"kind":"textbox","slide":13,"role":"card-body","text":"Node.js + Express + TypeScript + Prisma + JWT + bcrypt\n\n围绕目标对话、学习路径、对话学习、学习状态等服务模块分层组织。","textChars":87,"textLines":3,"bbox":[480,292,320,252]}
+{"kind":"shape","slide":13,"role":"card-tag-bg","bbox":[706,238,92,26]}
+{"kind":"shape","slide":13,"role":"card-tag","bbox":[712,243,80,16]}
+{"kind":"textbox","slide":13,"role":"card-tag","text":"服务层","textChars":3,"textLines":1,"bbox":[712,243,80,16]}
+{"kind":"shape","slide":13,"role":"card","bbox":[854,220,356,346]}
+{"kind":"shape","slide":13,"role":"card-mark","bbox":[872,238,52,8]}
+{"kind":"shape","slide":13,"role":"card-title","bbox":[872,254,320,28]}
+{"kind":"textbox","slide":13,"role":"card-title","text":"数据与能力支撑","textChars":7,"textLines":1,"bbox":[872,254,320,28]}
+{"kind":"shape","slide":13,"role":"card-body","bbox":[872,292,320,252]}
+{"kind":"textbox","slide":13,"role":"card-body","text":"核心实体包括用户、学习目标、学习路径、任务、学习会话、学习状态、成就记录与智能体调用日志。","textChars":45,"textLines":1,"bbox":[872,292,320,252]}
+{"kind":"shape","slide":13,"role":"card-tag-bg","bbox":[1098,238,92,26]}
+{"kind":"shape","slide":13,"role":"card-tag","bbox":[1104,243,80,16]}
+{"kind":"textbox","slide":13,"role":"card-tag","text":"数据层","textChars":3,"textLines":1,"bbox":[1104,243,80,16]}
+{"kind":"shape","slide":13,"role":"landing-summary","bbox":[146,600,990,56]}
+{"kind":"shape","slide":13,"role":"landing-summary-text","bbox":[176,617,930,22]}
+{"kind":"textbox","slide":13,"role":"landing-summary-text","text":"这说明项目并非概念 Demo，而是具备前后端、数据库、AI 能力接入与业务流程联动的实践型工程原型。","textChars":50,"textLines":1,"bbox":[176,617,930,22]}
+{"kind":"shape","slide":13,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":13,"role":"footer-page","text":"13 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":14,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":14,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":14,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":14,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":14,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":14,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":14,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":14,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":14,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":14,"role":"title","text":"14  项目完成度与验证情况","textChars":14,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":14,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":14,"role":"subtitle","text":"作品当前已具备可运行、可演示、可扩展的原型能力。","textChars":24,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":14,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":14,"role":"card","bbox":[58,210,270,136]}
+{"kind":"shape","slide":14,"role":"card-mark","bbox":[76,228,52,8]}
+{"kind":"shape","slide":14,"role":"card-title","bbox":[76,244,234,28]}
+{"kind":"textbox","slide":14,"role":"card-title","text":"完整工程结构","textChars":6,"textLines":1,"bbox":[76,244,234,28]}
+{"kind":"shape","slide":14,"role":"card-body","bbox":[76,282,234,42]}
+{"kind":"textbox","slide":14,"role":"card-body","text":"前后端分离架构已建立，代码、文档与部署结构完整。","textChars":24,"textLines":1,"bbox":[76,282,234,42]}
+{"kind":"shape","slide":14,"role":"card","bbox":[348,210,270,136]}
+{"kind":"shape","slide":14,"role":"card-mark","bbox":[366,228,52,8]}
+{"kind":"shape","slide":14,"role":"card-title","bbox":[366,244,234,28]}
+{"kind":"textbox","slide":14,"role":"card-title","text":"主链路已落地","textChars":6,"textLines":1,"bbox":[366,244,234,28]}
+{"kind":"shape","slide":14,"role":"card-body","bbox":[366,282,234,42]}
+{"kind":"textbox","slide":14,"role":"card-body","text":"用户主链路与后台主链路已具备基本可交互性。","textChars":21,"textLines":1,"bbox":[366,282,234,42]}
+{"kind":"shape","slide":14,"role":"card","bbox":[638,210,270,136]}
+{"kind":"shape","slide":14,"role":"card-mark","bbox":[656,228,52,8]}
+{"kind":"shape","slide":14,"role":"card-title","bbox":[656,244,234,28]}
+{"kind":"textbox","slide":14,"role":"card-title","text":"关键问题已修复","textChars":7,"textLines":1,"bbox":[656,244,234,28]}
+{"kind":"shape","slide":14,"role":"card-body","bbox":[656,282,234,42]}
+{"kind":"textbox","slide":14,"role":"card-body","text":"对话学习 taskId/pathId 参数链路缺失问题已修复。","textChars":31,"textLines":1,"bbox":[656,282,234,42]}
+{"kind":"shape","slide":14,"role":"card","bbox":[928,210,270,136]}
+{"kind":"shape","slide":14,"role":"card-mark","bbox":[946,228,52,8]}
+{"kind":"shape","slide":14,"role":"card-title","bbox":[946,244,234,28]}
+{"kind":"textbox","slide":14,"role":"card-title","text":"基础验证通过","textChars":6,"textLines":1,"bbox":[946,244,234,28]}
+{"kind":"shape","slide":14,"role":"card-body","bbox":[946,282,234,42]}
+{"kind":"textbox","slide":14,"role":"card-body","text":"前端最近一次 npm run build 已通过。","textChars":25,"textLines":1,"bbox":[946,282,234,42]}
+{"kind":"shape","slide":14,"role":"state-proof-frame","bbox":[118,386,470,258]}
+{"kind":"image","slide":14,"role":"state-proof","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\状态页.png","bbox":[118,386,470,258]}
+{"kind":"shape","slide":14,"role":"eval-proof-frame","bbox":[694,386,470,258]}
+{"kind":"image","slide":14,"role":"eval-proof","path":"D:\\大三下\\比赛-计算机设计大赛\\代码\\wenflow\\docs\\images\\评价页.png","bbox":[694,386,470,258]}
+{"kind":"shape","slide":14,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":14,"role":"footer-page","text":"14 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":15,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":15,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":15,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":15,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":15,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":15,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":15,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":15,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":15,"role":"title","bbox":[56,88,700,44]}
+{"kind":"textbox","slide":15,"role":"title","text":"15  项目优势对比与应用前景","textChars":15,"textLines":1,"bbox":[56,88,700,44]}
+{"kind":"shape","slide":15,"role":"subtitle","bbox":[58,132,860,32]}
+{"kind":"textbox","slide":15,"role":"subtitle","text":"既有清晰差异化，也具备面向教育实践场景的推广潜力。","textChars":25,"textLines":1,"bbox":[58,132,860,32]}
+{"kind":"shape","slide":15,"role":"title-line","bbox":[56,160,108,6]}
+{"kind":"shape","slide":15,"role":"compare-panel","bbox":[56,204,720,416]}
+{"kind":"shape","slide":15,"role":"cmp-title","bbox":[84,230,140,26]}
+{"kind":"textbox","slide":15,"role":"cmp-title","text":"差异化对比","textChars":5,"textLines":1,"bbox":[84,230,140,26]}
+{"kind":"shape","slide":15,"role":"th1","bbox":[84,274,160,48]}
+{"kind":"shape","slide":15,"role":"th2","bbox":[252,274,214,48]}
+{"kind":"shape","slide":15,"role":"th3","bbox":[474,274,260,48]}
+{"kind":"shape","slide":15,"role":"th-text","bbox":[84,288,160,16]}
+{"kind":"textbox","slide":15,"role":"th-text","text":"维度","textChars":2,"textLines":1,"bbox":[84,288,160,16]}
+{"kind":"shape","slide":15,"role":"th-text2","bbox":[252,288,214,16]}
+{"kind":"textbox","slide":15,"role":"th-text2","text":"普通聊天式 AI","textChars":8,"textLines":1,"bbox":[252,288,214,16]}
+{"kind":"shape","slide":15,"role":"th-text3","bbox":[474,288,260,16]}
+{"kind":"textbox","slide":15,"role":"th-text3","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[474,288,260,16]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[84,332,160,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[252,332,214,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[474,332,260,42]}
+{"kind":"shape","slide":15,"role":"row-dim","bbox":[92,343,144,16]}
+{"kind":"textbox","slide":15,"role":"row-dim","text":"目标理解","textChars":4,"textLines":1,"bbox":[92,343,144,16]}
+{"kind":"shape","slide":15,"role":"row-old","bbox":[260,343,198,16]}
+{"kind":"textbox","slide":15,"role":"row-old","text":"单轮提问","textChars":4,"textLines":1,"bbox":[260,343,198,16]}
+{"kind":"shape","slide":15,"role":"row-new","bbox":[482,343,244,16]}
+{"kind":"textbox","slide":15,"role":"row-new","text":"多轮目标澄清","textChars":6,"textLines":1,"bbox":[482,343,244,16]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[84,386,160,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[252,386,214,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[474,386,260,42]}
+{"kind":"shape","slide":15,"role":"row-dim","bbox":[92,397,144,16]}
+{"kind":"textbox","slide":15,"role":"row-dim","text":"输出形式","textChars":4,"textLines":1,"bbox":[92,397,144,16]}
+{"kind":"shape","slide":15,"role":"row-old","bbox":[260,397,198,16]}
+{"kind":"textbox","slide":15,"role":"row-old","text":"单次回答","textChars":4,"textLines":1,"bbox":[260,397,198,16]}
+{"kind":"shape","slide":15,"role":"row-new","bbox":[482,397,244,16]}
+{"kind":"textbox","slide":15,"role":"row-new","text":"阶段化学习路径","textChars":7,"textLines":1,"bbox":[482,397,244,16]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[84,440,160,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[252,440,214,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[474,440,260,42]}
+{"kind":"shape","slide":15,"role":"row-dim","bbox":[92,451,144,16]}
+{"kind":"textbox","slide":15,"role":"row-dim","text":"任务推进","textChars":4,"textLines":1,"bbox":[92,451,144,16]}
+{"kind":"shape","slide":15,"role":"row-old","bbox":[260,451,198,16]}
+{"kind":"textbox","slide":15,"role":"row-old","text":"用户自行组织","textChars":6,"textLines":1,"bbox":[260,451,198,16]}
+{"kind":"shape","slide":15,"role":"row-new","bbox":[482,451,244,16]}
+{"kind":"textbox","slide":15,"role":"row-new","text":"系统引导推进","textChars":6,"textLines":1,"bbox":[482,451,244,16]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[84,494,160,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[252,494,214,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[474,494,260,42]}
+{"kind":"shape","slide":15,"role":"row-dim","bbox":[92,505,144,16]}
+{"kind":"textbox","slide":15,"role":"row-dim","text":"学习反馈","textChars":4,"textLines":1,"bbox":[92,505,144,16]}
+{"kind":"shape","slide":15,"role":"row-old","bbox":[260,505,198,16]}
+{"kind":"textbox","slide":15,"role":"row-old","text":"结果导向","textChars":4,"textLines":1,"bbox":[260,505,198,16]}
+{"kind":"shape","slide":15,"role":"row-new","bbox":[482,505,244,16]}
+{"kind":"textbox","slide":15,"role":"row-new","text":"过程可观测","textChars":5,"textLines":1,"bbox":[482,505,244,16]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[84,548,160,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[252,548,214,42]}
+{"kind":"shape","slide":15,"role":"table-cell","bbox":[474,548,260,42]}
+{"kind":"shape","slide":15,"role":"row-dim","bbox":[92,559,144,16]}
+{"kind":"textbox","slide":15,"role":"row-dim","text":"系统形态","textChars":4,"textLines":1,"bbox":[92,559,144,16]}
+{"kind":"shape","slide":15,"role":"row-old","bbox":[260,559,198,16]}
+{"kind":"textbox","slide":15,"role":"row-old","text":"单点工具","textChars":4,"textLines":1,"bbox":[260,559,198,16]}
+{"kind":"shape","slide":15,"role":"row-new","bbox":[482,559,244,16]}
+{"kind":"textbox","slide":15,"role":"row-new","text":"平台化原型","textChars":5,"textLines":1,"bbox":[482,559,244,16]}
+{"kind":"shape","slide":15,"role":"future-panel","bbox":[816,204,392,416]}
+{"kind":"shape","slide":15,"role":"future-title","bbox":[844,230,160,26]}
+{"kind":"textbox","slide":15,"role":"future-title","text":"应用前景","textChars":4,"textLines":1,"bbox":[844,230,160,26]}
+{"kind":"shape","slide":15,"role":"bullet","bbox":[846,292,14,14]}
+{"kind":"shape","slide":15,"role":"bullet-text","bbox":[870,286,276,34]}
+{"kind":"textbox","slide":15,"role":"bullet-text","text":"校内课程项目与创新训练场景","textChars":13,"textLines":1,"bbox":[870,286,276,34]}
+{"kind":"shape","slide":15,"role":"bullet","bbox":[846,358,14,14]}
+{"kind":"shape","slide":15,"role":"bullet-text","bbox":[870,352,276,34]}
+{"kind":"textbox","slide":15,"role":"bullet-text","text":"竞赛备赛与项目制学习场景","textChars":12,"textLines":1,"bbox":[870,352,276,34]}
+{"kind":"shape","slide":15,"role":"bullet","bbox":[846,424,14,14]}
+{"kind":"shape","slide":15,"role":"bullet-text","bbox":[870,418,276,34]}
+{"kind":"textbox","slide":15,"role":"bullet-text","text":"教学辅助与训练营过程跟踪场景","textChars":14,"textLines":1,"bbox":[870,418,276,34]}
+{"kind":"shape","slide":15,"role":"bullet","bbox":[846,490,14,14]}
+{"kind":"shape","slide":15,"role":"bullet-text","bbox":[870,484,276,34]}
+{"kind":"textbox","slide":15,"role":"bullet-text","text":"后续可拓展多智能体协同教学能力","textChars":15,"textLines":1,"bbox":[870,484,276,34]}
+{"kind":"shape","slide":15,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":15,"role":"footer-page","text":"15 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
+{"kind":"shape","slide":16,"role":"bg-blob-1","bbox":[960,-90,430,300]}
+{"kind":"shape","slide":16,"role":"bg-blob-2","bbox":[1100,20,250,250]}
+{"kind":"shape","slide":16,"role":"bg-blob-3","bbox":[-120,540,300,240]}
+{"kind":"shape","slide":16,"role":"topbar","bbox":[28,24,1224,46]}
+{"kind":"shape","slide":16,"role":"topbar-text","bbox":[48,37,420,18]}
+{"kind":"textbox","slide":16,"role":"topbar-text","text":"大学生计算机设计大赛 · 人工智能应用——实践赛道","textChars":25,"textLines":1,"bbox":[48,37,420,18]}
+{"kind":"shape","slide":16,"role":"brand","bbox":[1088,34,130,22]}
+{"kind":"textbox","slide":16,"role":"brand","text":"知途 KnowPath","textChars":11,"textLines":1,"bbox":[1088,34,130,22]}
+{"kind":"shape","slide":16,"role":"end-panel","bbox":[144,152,992,404]}
+{"kind":"shape","slide":16,"role":"end-title","bbox":[590,196,100,32]}
+{"kind":"textbox","slide":16,"role":"end-title","text":"总结","textChars":2,"textLines":1,"bbox":[590,196,100,32]}
+{"kind":"shape","slide":16,"role":"end-main","bbox":[240,246,800,48]}
+{"kind":"textbox","slide":16,"role":"end-main","text":"让 AI 真正帮助学习者持续推进复杂任务","textChars":20,"textLines":1,"bbox":[240,246,800,48]}
+{"kind":"shape","slide":16,"role":"bullet","bbox":[244,340,14,14]}
+{"kind":"shape","slide":16,"role":"bullet-text","bbox":[268,334,736,34]}
+{"kind":"textbox","slide":16,"role":"bullet-text","text":"知途聚焦真实学习痛点，面向复杂任务学习场景。","textChars":22,"textLines":1,"bbox":[268,334,736,34]}
+{"kind":"shape","slide":16,"role":"bullet","bbox":[244,406,14,14]}
+{"kind":"shape","slide":16,"role":"bullet-text","bbox":[268,400,736,34]}
+{"kind":"textbox","slide":16,"role":"bullet-text","text":"项目构建了“目标澄清 → 路径规划 → 学习推进 → 状态反馈”的完整闭环。","textChars":38,"textLines":1,"bbox":[268,400,736,34]}
+{"kind":"shape","slide":16,"role":"bullet","bbox":[244,472,14,14]}
+{"kind":"shape","slide":16,"role":"bullet-text","bbox":[268,466,736,34]}
+{"kind":"textbox","slide":16,"role":"bullet-text","text":"作品已具备较完整的 AI 应用实践原型基础，兼具展示价值与产品化潜力。","textChars":35,"textLines":1,"bbox":[268,466,736,34]}
+{"kind":"shape","slide":16,"role":"thanks","bbox":[316,592,650,26]}
+{"kind":"textbox","slide":16,"role":"thanks","text":"感谢各位评委老师聆听，期待批评指正。","textChars":18,"textLines":1,"bbox":[316,592,650,26]}
+{"kind":"shape","slide":16,"role":"footer-page","bbox":[1160,684,70,20]}
+{"kind":"textbox","slide":16,"role":"footer-page","text":"16 / 16","textChars":7,"textLines":1,"bbox":[1160,684,70,20]}
